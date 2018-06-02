@@ -94,15 +94,15 @@ ALTER TABLE Users
 ALTER TABLE Users
 	ADD CONSTRAINT PK_Users PRIMARY KEY (Id, Username)
 
-/*** Problem 10.	Add Check Constraint ***/
+/*** Problem 10. Add Check Constraint ***/
 ALTER TABLE Users
 	ADD CONSTRAINT CHK_PasswordLength CHECK(DATALENGTH([Password]) >= 5)
 
-/*** Problem 11.	Set Default Value of a Field ***/
+/*** Problem 11. Set Default Value of a Field ***/
 ALTER TABLE Users
 	ADD CONSTRAINT DF_LastLoginTime DEFAULT(GETDATE()) FOR LastLoginTime
 
-/*** Problem 12.	Set Unique Field ***/
+/*** Problem 12. Set Unique Field ***/
 ALTER TABLE Users
 	DROP CONSTRAINT PK_Users
 
@@ -114,3 +114,163 @@ ALTER TABLE Users
 
 ALTER TABLE Users
 	ADD CONSTRAINT CHK_UsernameLength CHECK(DATALENGTH(Username) >= 3)
+
+/*** Problem 13. Movies Database ***/
+CREATE DATABASE Movies
+
+CREATE TABLE Directors
+(
+	Id INT PRIMARY KEY IDENTITY NOT NULL,
+	DirectorName NVARCHAR(30) NOT NULL,
+	Notes NVARCHAR(MAX)
+)
+
+CREATE TABLE Genres
+(
+	Id INT PRIMARY KEY IDENTITY NOT NULL,
+	GenreName NVARCHAR(20) NOT NULL,
+	Notes NVARCHAR(MAX)
+)
+
+CREATE TABLE Categories
+(
+	Id INT PRIMARY KEY IDENTITY NOT NULL,
+	CategoryName NVARCHAR(30) NOT NULL,
+	Notes NVARCHAR(MAX)
+)
+
+CREATE TABLE Movies
+(
+	Id INT PRIMARY KEY IDENTITY NOT NULL,
+	Title NVARCHAR(35) NOT NULL,
+	DirectorId INT FOREIGN KEY REFERENCES Directors(Id) NOT NULL,
+	CopyRightYear DATETIME2 NOT NULL,
+	[Length] INT NOT NULL,
+	GenreId INT FOREIGN KEY REFERENCES Genres(Id) NOT NULL,
+	CategoryId INT FOREIGN KEY REFERENCES Categories(Id) NOT NULL,
+	Rating DECIMAL(3,1),
+	Notes NVARCHAR(MAX)
+)
+
+INSERT INTO Genres(GenreName)
+VALUES
+('Action,'),
+('Comedy'),
+('Sci-Fi'),
+('Adventure'),
+('Fantasy')
+
+INSERT INTO Directors(DirectorName)
+VALUES
+('Anthony Hopkins'),
+('Jerry Bruckheimer'),
+('Batman'),
+('Kiro Kirov'),
+('Bai Shile')
+
+INSERT INTO Categories(CategoryName)
+VALUES
+('First Class'),
+('Second Class'),
+('Third Class'),
+('Fourth Class'),
+('Fifth Class')
+
+INSERT INTO Movies(Title, DirectorId, CopyRightYear, [Length], GenreId, CategoryId)
+VALUES
+('The Flash', 5, CONVERT(datetime2, '25-10-2014', 103), 0.4, 5, 1),
+('Prison Break', 4, CONVERT(datetime2, '25-10-2005', 103), 1.2, 1, 1),
+('The Vampire Diaries', 2, CONVERT(datetime2, '25-10-2011', 103), 0.45, 1, 2),
+('Once Upon a Time', 3, CONVERT(datetime2, '25-10-2015', 103), 0.46, 5, 3),
+('Legends of Tomorrow', 1, CONVERT(datetime2, '25-10-2016', 103), 0.48, 5, 4)
+
+/*** Problem 14. Car Rental Database ***/
+CREATE DATABASE CarRental
+
+CREATE TABLE Categories
+(
+	Id INT IDENTITY NOT NULL,
+	CategoryName NVARCHAR(30) NOT NULL,
+	DailyRate DECIMAL (8,2) NOT NULL,
+	WeeklyRate DECIMAL (8,2) NOT NULL,
+	MonthlyRate DECIMAL (8,2) NOT NULL,
+	WeekendRate DECIMAL (8,2),
+)
+
+ALTER TABLE Categories
+	ADD PRIMARY KEY (Id)
+
+CREATE TABLE Cars
+(
+	Id INT IDENTITY NOT NULL,
+	PlateNumber NVARCHAR(10) NOT NULL,
+	Manufacturer NVARCHAR(20) NOT NULL,
+	Model NVARCHAR(15) NOT NULL,
+	CarYear DATE NOT NULL,
+	CategoryId INT NOT NULL,
+	Doors INT NOT NULL,
+	Picture VARBINARY(MAX),
+	Condition NVARCHAR(100) NOT NULL,
+	Available BIT DEFAULT(1) NOT NULL
+)
+
+ALTER TABLE Cars
+	ADD PRIMARY KEY (Id)
+
+ALTER TABLE Cars
+	ADD CONSTRAINT CHK_PictureSize CHECK(DATALENGTH(Picture) <= 1024 * 1024 * 5)
+
+ALTER TABLE Cars
+	ADD FOREIGN KEY (CategoryId) REFERENCES Categories(Id)
+
+CREATE TABLE Employees
+(
+	Id INT IDENTITY NOT NULL,
+	FirstName NVARCHAR(20) NOT NULL,
+	LastName NVARCHAR(20) NOT NULL,
+	Title NVARCHAR(10) NOT NULL,
+	Notes NVARCHAR(MAX)
+)
+
+ALTER TABLE Employees
+	ADD PRIMARY KEY (Id)
+
+CREATE TABLE Customers
+(
+	Id INT IDENTITY NOT NULL,
+	DriverLicenseNumber NVARCHAR(25) NOT NULL,
+	FullName NVARCHAR(50) NOT NULL,
+	[Address] NVARCHAR(50) NOT NULL,
+	City NVARCHAR(20) NOT NULL,
+	ZIPCode NVARCHAR(10) NOT NULL,
+	Notes NVARCHAR(MAX)
+)
+
+ALTER TABLE Customers
+	ADD PRIMARY KEY (Id)
+
+CREATE TABLE RentalOrders
+(
+	Id INT IDENTITY NOT NULL,
+	EmployeeId INT FOREIGN KEY REFERENCES Employees(Id) NOT NULL,
+	CustomerId INT FOREIGN KEY REFERENCES Customers(Id) NOT NULL,
+	CarId INT FOREIGN KEY REFERENCES Cars(Id) NOT NULL,
+	TankLevel DECIMAL(5,2) NOT NULL,	
+	KilometrageStart DECIMAL(6,2) NOT NULL,
+	TotalKilometrage DECIMAL(6,2) NOT NULL,
+	StartDate DATETIME2 NOT NULL,
+	EndDate DATETIME2 NOT NULL,
+	--TotalDays INT,
+	TotalDays AS DATEDIFF(DAY, StartDate, EndDate),
+	RateApplied DECIMAL(8,2) NOT NULL,
+	TaxRate DECIMAL(8,2) NOT NULL,
+	OrderStatus BIT DEFAULT(0) NOT NULL,
+	Notes NVARCHAR(MAX)
+)
+
+ALTER TABLE RentalOrders
+	ADD PRIMARY KEY (Id)
+
+--ALTER TABLE RentalOrders
+--	ADD CONSTRAINT CHK_TotalDays CHECK(DATEDIFF(DAY, StartDate, EndDate) = TotalDays)
+
