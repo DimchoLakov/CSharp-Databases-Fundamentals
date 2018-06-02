@@ -76,11 +76,41 @@ CREATE TABLE Users(
 ALTER TABLE Users
 	ADD PRIMARY KEY(Id)
 
+ALTER TABLE Users
+	ADD CONSTRAINT CHK_ProfilePictureSize CHECK(DATALENGTH(ProfilePicture) <= 900 * 1024)
+
 INSERT INTO Users(Username, [Password], ProfilePicture, LastLoginTime, IsDeleted)
 VALUES
 ('Ivan', HASHBYTES('SHA1', '1213'), 123216, CONVERT(datetime, '25-01-2000', 103), 0),
-('Gosho', '1234', 123215, '01-25-2000', 0),
-('Pesho', '1235', 123214, '01-03-2000', 0),
-('Petar', '1236', 123218, '01-04-2000', 0),
-('Georgi', '1237', 123219, '01-05-2000', 0)
+('Gosho', '12345', 123215, '01-25-2000', 0),
+('Pesho', '12356', 123214, '01-03-2000', 0),
+('Petar', '12367', 123218, '01-04-2000', 0),
+('Georgi', '12378', 123219, '01-05-2000', 0)
 
+/*** Problem 9.	Change Primary Key ***/
+ALTER TABLE Users
+	DROP CONSTRAINT PK__Users__3214EC075A5691CF
+
+ALTER TABLE Users
+	ADD CONSTRAINT PK_Users PRIMARY KEY (Id, Username)
+
+/*** Problem 10.	Add Check Constraint ***/
+ALTER TABLE Users
+	ADD CONSTRAINT CHK_PasswordLength CHECK(DATALENGTH([Password]) >= 5)
+
+/*** Problem 11.	Set Default Value of a Field ***/
+ALTER TABLE Users
+	ADD CONSTRAINT DF_LastLoginTime DEFAULT(GETDATE()) FOR LastLoginTime
+
+/*** Problem 12.	Set Unique Field ***/
+ALTER TABLE Users
+	DROP CONSTRAINT PK_Users
+
+ALTER TABLE Users
+	ADD CONSTRAINT PK_Users PRIMARY KEY (Id)
+
+ALTER TABLE Users
+	ADD CONSTRAINT UQ_Users UNIQUE(Username)
+
+ALTER TABLE Users
+	ADD CONSTRAINT CHK_UsernameLength CHECK(DATALENGTH(Username) >= 3)
