@@ -1,7 +1,7 @@
 /*** Problem 1. Create Database Minions ***/
 CREATE DATABASE Minions
 
-USE Minions
+--USE Minions
 
 /*** Problem 2. Create Tables Minions and Towns ***/
 CREATE TABLE Minions (
@@ -118,6 +118,8 @@ ALTER TABLE Users
 /*** Problem 13. Movies Database ***/
 CREATE DATABASE Movies
 
+--USE Movies
+
 CREATE TABLE Directors
 (
 	Id INT PRIMARY KEY IDENTITY NOT NULL,
@@ -186,6 +188,8 @@ VALUES
 
 /*** Problem 14. Car Rental Database ***/
 CREATE DATABASE CarRental
+
+--USE CarRental
 
 CREATE TABLE Categories
 (
@@ -307,3 +311,260 @@ VALUES
 (3, 3, 3, 40, 80, 300, CONVERT(datetime2, '15-03-2002', 103), CONVERT(datetime2, '15-04-2002', 103), 14, 24, 0)
 
 /*** Problem 15. Hotel Database ***/
+CREATE DATABASE Hotel
+
+--USE Hotel
+
+CREATE TABLE Employees
+(
+	Id INT PRIMARY KEY IDENTITY NOT NULL,
+	FirstName NVARCHAR(15) NOT NULL,
+	LastName NVARCHAR(15) NOT NULL,
+	Title NVARCHAR(10) NOT NULL,
+	Notes NVARCHAR(MAX)
+)
+
+INSERT INTO Employees(FirstName, LastName, Title)
+VALUES
+('Jack', 'Sparrow', 'Captain'),
+('Harry', 'Potter', 'Magician'),
+('Barry', 'Allen', 'Speedster')
+
+CREATE TABLE Customers
+(
+	AccountNumber INT PRIMARY KEY NOT NULL,
+	FirstName NVARCHAR(20) NOT NULL,
+	LastName NVARCHAR(20) NOT NULL,
+	PhoneNumber INT NOT NULL,
+	EmergencyName NVARCHAR(40) NOT NULL,
+	EmergencyNumber INT NOT NULL,
+	Notes NVARCHAR(MAX)
+)
+
+INSERT INTO Customers(AccountNumber, FirstName, LastName, PhoneNumber, EmergencyName, EmergencyNumber)
+VALUES
+(1001, 'Drow', 'Ranger', 0885, 'Traxex', 08855),
+(1002, 'Jugger', 'Naut', 0886, 'Yurnero', 08856),
+(1003, 'Ursa', 'Bear', 0887, 'Ulf ''Saar', 08857)
+
+CREATE TABLE RoomStatus
+(
+	RoomStatus NVARCHAR(50) PRIMARY KEY NOT NULL,
+	Notes NVARCHAR(MAX)
+)
+
+INSERT INTO RoomStatus(RoomStatus)
+VALUES
+('Dirty'),
+('Almost Clean'),
+('Spotless')
+
+CREATE TABLE RoomTypes
+(
+	RoomType NVARCHAR(50) PRIMARY KEY NOT NULL,
+	Notes NVARCHAR(MAX)
+)
+
+INSERT INTO RoomTypes(RoomType)
+VALUES
+('Small'),
+('Standard'),
+('Big')
+
+CREATE TABLE BedTypes
+(
+	BedType NVARCHAR(50) PRIMARY KEY NOT NULL,
+	Notes NVARCHAR(MAX)
+)
+
+INSERT INTO BedTypes(BedType)
+VALUES
+('Single'),
+('Double'),
+('King Size')
+
+CREATE TABLE Rooms
+(
+	RoomNumber INT PRIMARY KEY IDENTITY NOT NULL,
+	RoomType NVARCHAR(50) NOT NULL,
+	BedType NVARCHAR(50) NOT NULL,
+	Rate DECIMAL(2,1) NOT NULL,
+	RoomStatus NVARCHAR(50) NOT NULL,
+	Notes NVARCHAR(MAX)
+)
+
+INSERT INTO Rooms(RoomType, BedType, Rate, RoomStatus)
+VALUES
+('Small', 'Single', 5, 'Dirty'),
+('Medium', 'Double', 6, 'Almost Clean'),
+('Big', 'King Size', 7, 'Spotless')
+
+CREATE TABLE Payments
+(
+	Id INT PRIMARY KEY IDENTITY NOT NULL,
+	EmployeeId INT NOT NULL,
+	PaymentDate DATE NOT NULL,
+	AccountNumber INT NOT NULL,
+	FirstDateOccupied DATE NOT NULL,
+	LastDateOccupied DATE NOT NULL,
+	TotalDays INT NOT NULL,
+	AmountCharged DECIMAL(10, 2) NOT NULL,
+	TaxRate DECIMAL(10, 2) NOT NULL,
+	TaxAmount DECIMAL(10, 2) /*NOT NULL,*/,
+	PaymentTotal DECIMAL(10, 2) NOT NULL,
+	Notes NVARCHAR(MAX)
+)
+
+ALTER TABLE Payments
+	ADD CONSTRAINT CHK_TotalDays CHECK(DATEDIFF(DAY, FirstDateOccupied, LastDateOccupied) = TotalDays)
+
+ALTER TABLE Payments
+	ADD CONSTRAINT CHK_TaxAmount CHECK(TaxAmount = TotalDays * TaxRate)
+	
+INSERT INTO Payments
+(EmployeeId, PaymentDate, AccountNumber, FirstDateOccupied, LastDateOccupied, TotalDays, AmountCharged, TaxRate, PaymentTotal)
+VALUES
+(1, CONVERT(datetime2, '30-04-2010', 103), 1, CONVERT(datetime2, '20-04-2010', 103), CONVERT(datetime2, '25-04-2010', 103), 5, 20, 10, 200),
+(2, CONVERT(datetime2, '30-04-2011', 103), 2, CONVERT(datetime2, '15-04-2011', 103), CONVERT(datetime2, '20-04-2011', 103), 5, 30, 20, 300),
+(3, CONVERT(datetime2, '30-04-2012', 103), 3, CONVERT(datetime2, '10-04-2012', 103), CONVERT(datetime2, '15-04-2012', 103), 5, 40, 30, 500)
+
+CREATE TABLE Occupancies
+(
+	Id INT PRIMARY KEY IDENTITY NOT NULL,
+	EmployeeId INT NOT NULL,
+	DateOccupied DATETIME2 NOT NULL,
+	AccountNumber INT NOT NULL,
+	RoomNumber INT NOT NULL,
+	RateApplied DECIMAL(15,2),
+	PhoneCharge DECIMAL(15,3),
+	Notes NVARCHAR(50)
+)
+
+INSERT INTO Occupancies(EmployeeId, DateOccupied, AccountNumber, RoomNumber, RateApplied, PhoneCharge)
+VALUES
+(1, CONVERT(datetime2, '20-07-2014', 103) , 1, 2, 200, 20),
+(2, CONVERT(datetime2, '20-08-2014', 103) , 2, 3, 300, 30),
+(3, CONVERT(datetime2, '20-09-2014', 103) , 3, 4, 400, 40)
+
+/*** Problem 16. Create SoftUni Database ***/
+CREATE DATABASE SoftUni
+
+--USE SoftUni
+
+CREATE TABLE Towns
+(
+	Id INT PRIMARY KEY IDENTITY NOT NULL,
+	[Name] NVARCHAR(30) NOT NULL
+)
+
+CREATE TABLE Addresses
+(
+	Id INT PRIMARY KEY IDENTITY NOT NULL,
+	AddressText NVARCHAR(100) NOT NULL,
+	TownId INT FOREIGN KEY REFERENCES Towns(Id)
+)
+
+CREATE TABLE Departments
+(
+	Id INT PRIMARY KEY IDENTITY NOT NULL,
+	[Name] NVARCHAR(50) NOT NULL
+)
+
+CREATE TABLE Employees
+(
+	Id INT PRIMARY KEY IDENTITY NOT NULL,
+	FirstName NVARCHAR(30) NOT NULL,
+	MiddleName NVARCHAR(30) NOT NULL,
+	LastName NVARCHAR(30) NOT NULL,
+	JobTitle NVARCHAR(35) NOT NULL,
+	DepartmentId INT FOREIGN KEY REFERENCES Departments(Id),
+	HireDate DATETIME2 NOT NULL,
+	Salary DECIMAL(15,2) NOT NULL,
+	AddressId INT FOREIGN KEY REFERENCES Addresses(Id) NOT NULL
+)
+
+/*** Problem 17. Backup Database ***/
+BACKUP DATABASE SoftUni
+TO DISK = 'D:\softuni-backup.bak'
+
+DROP DATABASE SoftUni
+
+RESTORE DATABASE SoftUni
+FROM DISK = 'D:\softuni-backup.bak'
+
+USE SoftUni
+
+/*** Problem 18. Basic Insert ***/
+INSERT INTO Towns([Name])
+VALUES
+('Sofia'),
+('Plovdiv'),
+('Varna'),
+('Burgas'),
+('Pleven')
+
+INSERT INTO Addresses(AddressText, TownId)
+VALUES
+('First Street', 1),
+('Second Street', 2),
+('Third Street', 3),
+('Fourth Street', 4),
+('Fifth Street', 5)
+
+INSERT INTO Departments([Name])
+VALUES
+('Software Development'),
+('Engineering'),
+('Quality Assurance'),
+('Sales'),
+('Marketing')
+
+INSERT INTO Employees(FirstName, MiddleName, LastName, JobTitle, DepartmentId, HireDate, Salary, AddressId)
+VALUES
+('Ivan', 'Ivanov', 'Ivanov', '.NET Developer', 1, CONVERT(datetime2, '01/02/2013', 103), 3500, 1),
+('Petar', 'Petrov', 'Petrov', 'Senior Engineer', 2, CONVERT(datetime2, '02/03/2004', 103), 4000, 2),
+('Maria', 'Petrova', 'Ivanova', 'Intern', 3, CONVERT(datetime2, '28/08/2016', 103), 525.25, 3),
+('Georgi', 'Teziev', 'Ivanov', 'CEO', 4, CONVERT(datetime2, '09/12/2007', 103), 3000, 4),
+('Peter', 'Pan', 'Pan', 'Intern', 5, CONVERT(datetime2, '28/08/2016', 103), 599.88, 5)
+
+/*** Problem 19. Basic Select All Fields ***/
+SELECT * FROM Towns
+SELECT * FROM Departments
+SELECT * FROM Employees
+
+/*** Problem 20. Basic Select All Fields and Order Them ***/
+SELECT * FROM Towns
+ORDER BY [Name]
+
+SELECT * FROM Departments
+ORDER BY [Name]
+
+SELECT * FROM Employees
+ORDER BY Salary DESC
+
+/*** Problem 21. Basic Select Some Fields ***/
+SELECT [Name] FROM Towns
+ORDER BY [Name]
+
+SELECT [Name] FROM Departments
+ORDER BY [Name]
+
+SELECT FirstName, LastName, JobTitle, Salary FROM Employees
+ORDER BY Salary DESC
+
+/*** 22. Increase Employees Salary ***/
+UPDATE Employees
+	SET Salary *= 1.1
+
+SELECT Salary FROM Employees
+
+/*** 23. Decrease Tax Rate ***/
+--USE Hotel
+
+UPDATE Payments
+	SET TaxRate -= TaxRate * 0.03
+
+SELECT TaxRate FROM Payments
+
+/*** 24. Delete All Records ***/
+TRUNCATE TABLE Occupancies
