@@ -194,11 +194,17 @@ CREATE TABLE Categories
 	DailyRate DECIMAL (8,2) NOT NULL,
 	WeeklyRate DECIMAL (8,2) NOT NULL,
 	MonthlyRate DECIMAL (8,2) NOT NULL,
-	WeekendRate DECIMAL (8,2),
+	WeekendRate DECIMAL (8,2)
 )
 
 ALTER TABLE Categories
 	ADD PRIMARY KEY (Id)
+	
+INSERT INTO Categories(CategoryName, DailyRate, WeeklyRate, MonthlyRate)
+VALUES
+('AllTrack', 2.5, 10, 4),
+('OffRoad', 3.5, 11, 5),
+('Commercial', 4.5, 12, 6)
 
 CREATE TABLE Cars
 (
@@ -223,6 +229,12 @@ ALTER TABLE Cars
 ALTER TABLE Cars
 	ADD FOREIGN KEY (CategoryId) REFERENCES Categories(Id)
 
+INSERT INTO Cars(PlateNumber, Manufacturer, Model, CarYear, CategoryId, Doors, Picture, Condition, Available)
+VALUES
+('AB1001', 'Merc', '320', CONVERT(date, '25-01-2000', 103), 1, 4, 7812421, 'New', 1),
+('CD1001', 'Au', 'A4', CONVERT(date, '25-02-2000', 103), 2, 5, 7346, 'As New', 0),
+('EF1001', 'BM', '516i', CONVERT(date, '25-03-2000', 103), 3, 7, 7812421, 'New', 1)
+
 CREATE TABLE Employees
 (
 	Id INT IDENTITY NOT NULL,
@@ -234,6 +246,12 @@ CREATE TABLE Employees
 
 ALTER TABLE Employees
 	ADD PRIMARY KEY (Id)
+
+INSERT INTO Employees(FirstName, LastName, Title)
+VALUES
+('Jack', 'Sparrow', 'Mr'),
+('Dominic', 'Torreto', 'Mr'),
+('Brian', 'O''Connor', 'Mr')
 
 CREATE TABLE Customers
 (
@@ -249,6 +267,12 @@ CREATE TABLE Customers
 ALTER TABLE Customers
 	ADD PRIMARY KEY (Id)
 
+INSERT INTO Customers(DriverLicenseNumber, FullName, [Address], City, ZIPCode)
+VALUES
+('A1200', 'H.R.', 'Dura Street', 'Dundee', 'DD1'),
+('B1300', 'T.V.', 'Eliza Street', 'Glasgow', 'GL1'),
+('C1400', 'J.K.', 'Bell Street', 'Aberdeen', 'AB1')
+
 CREATE TABLE RentalOrders
 (
 	Id INT IDENTITY NOT NULL,
@@ -256,8 +280,9 @@ CREATE TABLE RentalOrders
 	CustomerId INT FOREIGN KEY REFERENCES Customers(Id) NOT NULL,
 	CarId INT FOREIGN KEY REFERENCES Cars(Id) NOT NULL,
 	TankLevel DECIMAL(5,2) NOT NULL,	
-	KilometrageStart DECIMAL(6,2) NOT NULL,
-	TotalKilometrage DECIMAL(6,2) NOT NULL,
+	KilometrageStart DECIMAL(8,2) NOT NULL,
+	KilometrageEnd DECIMAL(8,2) NOT NULL,
+	TotalKilometrage AS KilometrageEnd - KilometrageStart,
 	StartDate DATETIME2 NOT NULL,
 	EndDate DATETIME2 NOT NULL,
 	--TotalDays INT,
@@ -274,3 +299,11 @@ ALTER TABLE RentalOrders
 --ALTER TABLE RentalOrders
 --	ADD CONSTRAINT CHK_TotalDays CHECK(DATEDIFF(DAY, StartDate, EndDate) = TotalDays)
 
+INSERT INTO RentalOrders
+(EmployeeId, CustomerId, CarId, TankLevel, KilometrageStart, KilometrageEnd, StartDate, EndDate, RateApplied, TaxRate, OrderStatus)
+VALUES
+(1, 1, 1, 20, 0, 100, CONVERT(datetime2, '20-07-2002', 103), CONVERT(datetime2, '20-10-2002', 103), 10, 20, 1),
+(2, 2, 2, 30, 50, 200, CONVERT(datetime2, '10-08-2002', 103), CONVERT(datetime2, '10-12-2002', 103), 12, 22, 1),
+(3, 3, 3, 40, 80, 300, CONVERT(datetime2, '15-03-2002', 103), CONVERT(datetime2, '15-04-2002', 103), 14, 24, 0)
+
+/*** Problem 15. Hotel Database ***/
