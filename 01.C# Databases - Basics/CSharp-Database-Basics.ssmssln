@@ -13,6 +13,8 @@ Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "04.Data-Aggregation", "04.D
 EndProject
 Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "05.Table-Relations", "05.Table-Relations\05.Table-Relations.ssmssqlproj", "{992F5D25-DDDC-4C42-841C-463A73C8AC5C}"
 EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "06.Subquerries-and-JOINs", "06.Subquerries-and-JOINs\06.Subquerries-and-JOINs.ssmssqlproj", "{478C9064-9B20-4621-B417-5E85713D0C7B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Default|Default = Default|Default
@@ -22,8 +24,9 @@ Global
 		{2640E24C-85D6-419D-A0FC-7082B080CD8D}.Default|Default.ActiveCfg = Default
 		{8A5BD31F-7C3F-46BB-8AC5-A2B1B55438D3}.Default|Default.ActiveCfg = Default
 		{F7067289-5A6E-4B18-9FB5-8DB6A4628CD7}.Default|Default.ActiveCfg = Default
-		{6A0C9052-DECC-4EB2-A527-7C5A27E6D523}.Default|Default.ActiveCfg = Default
 		{992F5D25-DDDC-4C42-841C-463A73C8AC5C}.Default|Default.ActiveCfg = Default
+		{478C9064-9B20-4621-B417-5E85713D0C7B}.Default|Default.ActiveCfg = Default
+		{2ADE0533-20C6-47C8-BF38-7224D39F393A}.Default|Default.ActiveCfg = Default
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
