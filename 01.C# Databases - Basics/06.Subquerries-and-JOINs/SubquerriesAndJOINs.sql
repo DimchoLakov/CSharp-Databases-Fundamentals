@@ -135,8 +135,24 @@ LEFT OUTER JOIN Rivers AS r ON cr.RiverId = r.Id
 WHERE c.ContinentCode = 'AF'
 ORDER BY c.CountryName ASC
 
-/*** Problem 15. *Continents and Currencies ***/      -- TODO !!!!!!!!!
-
+/*** Problem 15. *Continents and Currencies ***/
+SELECT ranked.ContinentCode, ranked.CurrencyCode, ranked.CurrencyUsage
+FROM (SELECT cc.ContinentCode, 
+	   cc.CurrencyCode, 
+	   cc.CurrencyUsage,
+	   DENSE_RANK() OVER(PARTITION BY cc.ContinentCode ORDER BY cc.CurrencyUsage DESC) AS RankUsage
+ FROM (
+		  SELECT coun.ContinentCode, 
+				 coun.CurrencyCode, 
+				 COUNT(coun.CurrencyCode) AS CurrencyUsage
+			FROM Countries AS coun
+		   WHERE coun.CurrencyCode IS NOT NULL
+		GROUP BY coun.ContinentCode, coun.CurrencyCode
+		  HAVING COUNT(coun.CurrencyCode) > 1
+	  ) AS cc
+	) AS ranked
+WHERE ranked.RankUsage = 1
+ORDER BY ranked.ContinentCode ASC
 
 /*** Problem 16. Countries without any Mountains ***/
 SELECT COUNT(c.CountryCode) AS [CountryCode]
@@ -185,3 +201,26 @@ FROM Countries AS c
 	LEFT JOIN Rivers AS r ON r.Id = cr.RiverId
 GROUP BY c.CountryName
 ORDER BY HighestPeakElevation DESC, LongestRiverLength DESC, c.CountryName ASC
+
+/*** Problem 18. * Highest Peak Name and Elevation by Country ***/
+
+SELECT TOP (5) Result.CountryName AS [Country],
+	   ISNULL(Result.PeakName, '(no highest peak)') AS [Highest Peak Name],
+	   ISNULL(Result.Elevation, 0 ) AS [Highest Peak Elevation],
+	   ISNULL(Result.MountainRange, '(no mountain)') AS [Mountain]
+FROM (
+		SELECT cpm.CountryName,
+	   cpm.PeakName,
+	   cpm.Elevation,
+	   cpm.MountainRange,
+	   DENSE_RANK() OVER(PARTITION BY CountryName ORDER BY Elevation DESC) AS RankedPeaks
+FROM (
+		SELECT c.CountryName, p.PeakName, p.Elevation, m.MountainRange
+		FROM Countries AS c
+		LEFT JOIN MountainsCountries AS mc ON mc.CountryCode = c.CountryCode
+		LEFT JOIN Mountains AS m ON m.Id = mc.MountainId
+		LEFT JOIN Peaks AS p ON p.MountainId = m.Id
+     ) AS cpm
+	) AS Result
+WHERE Result.RankedPeaks = 1
+ORDER BY Result.CountryName ASC, Result.PeakName ASC
