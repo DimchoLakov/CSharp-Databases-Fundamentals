@@ -28,7 +28,7 @@ namespace P02_DatabaseFirst.Data
             if (!optionsBuilder.IsConfigured)
             {
                 //Change Server= to your localDb
-                optionsBuilder.UseSqlServer("Server=.;Database=SoftUni;Integrated Security=True;");
+                optionsBuilder.UseSqlServer(Configration.ConnectionString);
             }
         }
 
