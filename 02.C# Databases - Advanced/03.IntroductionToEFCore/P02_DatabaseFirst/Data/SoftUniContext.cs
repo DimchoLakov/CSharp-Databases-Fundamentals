@@ -27,7 +27,8 @@ namespace P02_DatabaseFirst.Data
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=DESKTOP-2G28R6E\\SQLEXPRESS01;Database=SoftUni;Integrated Security=True;");
+                //Change Server= to your localDb
+                optionsBuilder.UseSqlServer("Server=.;Database=SoftUni;Integrated Security=True;");
             }
         }
 
