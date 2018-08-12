@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BusTicket.Data\BusTicket.Data.csproj" />
+    <ProjectReference Include="..\BusTicket.Models\BusTicket.Models.csproj" />
+  </ItemGroup>
+
+</Project>
