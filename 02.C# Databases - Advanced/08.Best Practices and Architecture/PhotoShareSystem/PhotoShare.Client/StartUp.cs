@@ -34,8 +34,8 @@ namespace PhotoShare.Client
                 .AddJsonFile("appsettings.json")
                 .Build();
 
-            serviceCollection.AddDbContext<PhotoShareContext>(options =>
-                options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
+		    serviceCollection.AddDbContext<PhotoShareContext>(options =>
+                options.UseLazyLoadingProxies().UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
 
             //serviceCollection.AddDbContext<PhotoShareContext>(opt => opt.UseSqlServer(DbContextConfig.ConnectionString));
 

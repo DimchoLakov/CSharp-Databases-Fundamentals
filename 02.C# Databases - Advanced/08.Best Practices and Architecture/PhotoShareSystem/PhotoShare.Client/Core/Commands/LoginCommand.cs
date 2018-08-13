@@ -34,11 +34,15 @@ namespace PhotoShare.Client.Core.Commands
             }
 
             var userExists = this._userService.Exists(username);
+            if (!userExists)
+            {
+                throw new ArgumentException(UsernameOrPasswordDoNotMatch);
+            }
 
             var userDto = this._userService.ByUsername<UserDto>(username);
             var passwordMatches = userDto.Password.Equals(password);
 
-            if (!userExists || !passwordMatches)
+            if (!passwordMatches)
             {
                 throw new ArgumentException(UsernameOrPasswordDoNotMatch); 
             }

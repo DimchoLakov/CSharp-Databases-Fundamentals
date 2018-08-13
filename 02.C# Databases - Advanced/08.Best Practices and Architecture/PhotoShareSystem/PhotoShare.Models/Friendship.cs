@@ -4,10 +4,10 @@
     {
         public int UserId { get; set; }
 
-        public User User { get; set; }
+        public virtual User User { get; set; }
 
         public int FriendId { get; set; }
 
-        public User Friend { get; set; }
+        public virtual User Friend { get; set; }
     }
 }

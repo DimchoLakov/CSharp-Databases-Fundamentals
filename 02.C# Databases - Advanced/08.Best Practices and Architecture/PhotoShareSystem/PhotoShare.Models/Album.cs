@@ -21,10 +21,10 @@
 
         public bool IsPublic { get; set; }
 
-        public ICollection<AlbumRole> AlbumRoles { get; set; }
-
-        public ICollection<Picture> Pictures { get; set; }
-
-        public ICollection<AlbumTag> AlbumTags { get; set; }
+        public virtual ICollection<AlbumRole> AlbumRoles { get; set; }
+               
+        public virtual ICollection<Picture> Pictures { get; set; }
+               
+        public virtual ICollection<AlbumTag> AlbumTags { get; set; }
     }
 }

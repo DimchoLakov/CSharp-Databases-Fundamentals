@@ -13,6 +13,6 @@
 
         public string Name { get; set; }
 
-        public ICollection<AlbumTag> AlbumTags { get; set; }
+        public virtual ICollection<AlbumTag> AlbumTags { get; set; }
     }
 }

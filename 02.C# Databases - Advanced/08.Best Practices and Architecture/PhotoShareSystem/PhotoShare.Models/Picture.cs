@@ -11,9 +11,9 @@
         public string Path { get; set; }
 
         public int AlbumId { get; set; }
-        public Album Album { get; set; }
+        public virtual Album Album { get; set; }
 
         public int UserProfileId { get; set; }
-        public User UserProfile { get; set; }
+        public virtual User UserProfile { get; set; }
     }
 }

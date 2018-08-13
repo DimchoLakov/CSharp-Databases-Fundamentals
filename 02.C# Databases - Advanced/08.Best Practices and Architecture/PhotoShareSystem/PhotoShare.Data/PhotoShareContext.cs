@@ -14,19 +14,20 @@ namespace PhotoShare.Data
 	    {
 	    }
         
-        public DbSet<User> Users { get; set; }   
-        public DbSet<Album> Albums { get; set; }
-        public DbSet<Picture> Pictures { get; set; }
-        public DbSet<Tag> Tags { get; set; }
-        public DbSet<AlbumRole> AlbumRoles { get; set; }
-        public DbSet<Town> Towns { get; set; }	
-	    public DbSet<AlbumTag> AlbumTags { get; set; }
-        public DbSet<Friendship> Friendships { get; set; }
+        public virtual DbSet<User> Users { get; set; }   
+        public virtual DbSet<Album> Albums { get; set; }
+        public virtual DbSet<Picture> Pictures { get; set; }
+        public virtual DbSet<Tag> Tags { get; set; }
+        public virtual DbSet<AlbumRole> AlbumRoles { get; set; }
+        public virtual DbSet<Town> Towns { get; set; }	
+	    public virtual DbSet<AlbumTag> AlbumTags { get; set; }
+        public virtual DbSet<Friendship> Friendships { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {
+                optionsBuilder.UseLazyLoadingProxies();
                 optionsBuilder.UseSqlServer(DbContextConfig.ConnectionString);
             }
         }

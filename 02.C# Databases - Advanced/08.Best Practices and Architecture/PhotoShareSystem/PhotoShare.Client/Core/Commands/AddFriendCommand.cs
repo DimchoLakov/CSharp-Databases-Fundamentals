@@ -34,14 +34,6 @@ namespace PhotoShare.Client.Core.Commands
             string firstUsername = data[0];
             string secondUsername = data[1];
 
-            var isLoggedIn = this._userSessionService.IsLoggedIn;
-            var isSamePerson = this._userSessionService.User.Username == firstUsername;
-
-            if (!isLoggedIn || !isSamePerson)
-            {
-                throw new InvalidOperationException(InvalidCredentials);
-            }
-
             bool firstUserExists = this._userService.Exists(firstUsername);
             bool secondUserExists = this._userService.Exists(secondUsername);
 
@@ -55,14 +47,22 @@ namespace PhotoShare.Client.Core.Commands
                 throw new ArgumentException(string.Format(UserNotFound, secondUsername));
             }
 
+            var isLoggedIn = this._userSessionService.IsLoggedIn;
+
+            if (!isLoggedIn)
+            {
+                throw new InvalidOperationException(InvalidCredentials);
+            }
+
+            var isSamePerson = this._userSessionService.User.Username == firstUsername;
+
+            if (!isSamePerson)
+            {
+                throw new InvalidOperationException(InvalidCredentials);
+            }
+
             int firstUserId = this._userService.ByUsername<UserDto>(firstUsername).Id;
             int secondUserId = this._userService.ByUsername<UserDto>(secondUsername).Id;
-
-            using (var tempContext = new PhotoShareContext())
-            {
-                var tempUser = tempContext.Users.Find(firstUserId);
-                var tempFriend = tempContext.Users.Find(secondUserId);
-            }
             
             var firstUser = this._userService.ById<UserFriendsDto>(firstUserId);
             var secondUser = this._userService.ById<UserFriendsDto>(secondUserId);

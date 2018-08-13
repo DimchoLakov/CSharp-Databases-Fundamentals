@@ -16,8 +16,8 @@
 
         public string Country { get; set; }
 
-        public ICollection<User> UsersBornInTown { get; set; }
+        public virtual ICollection<User> UsersBornInTown { get; set; }
 
-        public ICollection<User> UsersCurrentlyLivingInTown { get; set; } 
+        public virtual ICollection<User> UsersCurrentlyLivingInTown { get; set; } 
     }
 }
