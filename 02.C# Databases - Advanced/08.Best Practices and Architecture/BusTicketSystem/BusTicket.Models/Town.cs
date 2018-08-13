@@ -22,8 +22,8 @@ namespace BusTicket.Models
 
         public string Country { get; set; }
 
-        public ICollection<BusStation> BusStations { get; set; }
+        public virtual ICollection<BusStation> BusStations { get; set; }
 
-        public ICollection<Customer> Customers { get; set; }
+        public virtual ICollection<Customer> Customers { get; set; }
     }
 }

@@ -13,10 +13,10 @@ namespace BusTicket.Models
         public decimal Grade { get; set; }
 
         public int BusCompanyId { get; set; }
-        public BusCompany BusCompany { get; set; }
+        public virtual BusCompany BusCompany { get; set; }
 
         public int CustomerId { get; set; }
-        public Customer Customer { get; set; }
+        public virtual Customer Customer { get; set; }
 
         public DateTime DateOfPublishing { get; set; }
     }

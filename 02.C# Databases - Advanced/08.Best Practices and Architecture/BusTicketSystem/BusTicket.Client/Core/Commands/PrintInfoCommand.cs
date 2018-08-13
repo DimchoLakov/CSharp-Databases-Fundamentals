@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System;
+using System.Text;
 using BusTicket.Client.Core.Contracts;
 using BusTicket.Services.Contracts;
 
@@ -6,6 +7,8 @@ namespace BusTicket.Client.Core.Commands
 {
     public class PrintInfoCommand : IExecutable
     {
+        private const string BusStationNotFound = "Bus station with id {0} not found!";
+
         private readonly IBusStationService _busStationService;
 
         public PrintInfoCommand(IBusStationService busStationService)
@@ -18,6 +21,11 @@ namespace BusTicket.Client.Core.Commands
             int busStationId = int.Parse(args[0]);
 
             var busStation = this._busStationService.GetBusStationById(busStationId);
+
+            if (busStation == null)
+            {
+                throw new InvalidOperationException(string.Format(BusStationNotFound, busStationId));
+            }
 
             var sb = new StringBuilder();
 

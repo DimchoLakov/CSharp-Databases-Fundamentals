@@ -9,9 +9,9 @@
         public int Seat { get; set; }
 
         public int CustomerId { get; set; }
-        public Customer Customer { get; set; }
+        public virtual Customer Customer { get; set; }
 
         public int TripId { get; set; }
-        public Trip Trip { get; set; }
+        public virtual Trip Trip { get; set; }
     }
 }

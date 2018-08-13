@@ -24,13 +24,13 @@ namespace BusTicket.Models
         public Gender Gender { get; set; }
 
         public int? HomeTownId { get; set; }
-        public Town HomeTown { get; set; }
+        public virtual Town HomeTown { get; set; }
 
         public int? BankAccountId { get; set; }
-        public BankAccount BankAccount { get; set; }
+        public virtual BankAccount BankAccount { get; set; }
 
-        public ICollection<Ticket> Tickets { get; set; }
+        public virtual ICollection<Ticket> Tickets { get; set; }
 
-        public ICollection<Review> Reviews { get; set; }
+        public virtual ICollection<Review> Reviews { get; set; }
     }
 }

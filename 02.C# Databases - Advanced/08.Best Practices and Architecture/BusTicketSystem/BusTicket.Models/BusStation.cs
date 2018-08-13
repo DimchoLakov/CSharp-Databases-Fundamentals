@@ -16,10 +16,10 @@ namespace BusTicket.Models
         public string Name { get; set; }
 
         public int TownId { get; set; }
-        public Town Town { get; set; }
+        public virtual Town Town { get; set; }
         
-        public ICollection<Trip> ArrivalTrips { get; set; }
+        public virtual ICollection<Trip> ArrivalTrips { get; set; }
 
-        public ICollection<Trip> DestionationTrips { get; set; }
+        public virtual ICollection<Trip> DestionationTrips { get; set; }
     }
 }

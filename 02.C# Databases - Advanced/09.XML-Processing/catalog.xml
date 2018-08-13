@@ -1,0 +1,38 @@
+<musicalCatalog>
+	<album>
+		<name>The Eminem Show</name>
+		<artist>Eminem</artist>
+		<year>2002</year>
+		<producer>Eminem</producer>
+		<price>15</price>
+		<songs>
+			<song>Lose Yourself</song>
+			<song>8 mile</song>
+			<song>Mockingbird</song>
+		</songs>
+	</album>
+	<album>
+		<name>The Blueprint</name>
+		<artist>Jay-Z</artist>
+		<year>2001</year>
+		<producer>Jay-Z</producer>
+		<price>14</price>
+		<songs>
+			<song>The Ruler's Back</song>
+			<song>Takeover</song>
+			<song>All I need</song>
+		</songs>
+	</album>
+	<album>
+		<name>Dangerously in Love</name>
+		<artist>Beyonce</artist>
+		<year>2003</year>
+		<producer>Beyonce</producer>
+		<price>12</price>
+		<songs>
+			<song>Crazy in love</song>
+			<song>Naughty girl</song>
+			<song>Baby boy</song>
+		</songs>
+	</album>
+</musicalCatalog>

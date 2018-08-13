@@ -1,0 +1,51 @@
+<student>
+	<name>Pesho</name>
+	<gender>Male</gender>
+	<birthDate>1990/06/1</birthDate>
+	<phoneNumber>002288334455</phoneNumber>
+	<email>pesho@agg.bg</email>
+	<university>SU</university>
+	<specialty>IT</specialty>
+	<facultyNumber>100512</facultyNumber>
+	<address>Sofia</address>
+	<exams>
+		<exam>
+			<examName>Programming Basics</examName>
+			<dateTaken>2017/05/07</dateTaken>
+			<duration>4</duration>
+			<grade>6.0</grade>
+		</exam>
+		<exam>
+			<examName>Programming Fundamentals</examName>
+			<dateTaken>2017/08/20</dateTaken>
+			<duration>6</duration>
+			<grade>6.0</grade>
+		</exam>
+	</exams>
+</student>
+
+<student>
+	<name>Gosho</name>
+	<gender>Male</gender>
+	<birthDate>1995/08/16</birthDate>
+	<phoneNumber>00552117654</phoneNumber>
+	<email>gosho@att.bg</email>
+	<university>SU</university>
+	<specialty>IT</specialty>
+	<facultyNumber>100876</facultyNumber>
+	<address>Sofia</address>
+	<exams>
+		<exam>
+			<examName>Programming Basics</examName>
+			<dateTaken>2017/05/07</dateTaken>
+			<duration>4</duration>
+			<grade>5.5</grade>
+		</exam>
+		<exam>
+			<examName>Programming Fundamentals</examName>
+			<dateTaken>2017/08/20</dateTaken>
+			<duration>6</duration>
+			<grade>4.5</grade>
+		</exam>
+	</exams>
+</student>

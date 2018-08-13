@@ -19,8 +19,8 @@ namespace BusTicket.Models
 
         public string Rating { get; set; }
 
-        public ICollection<Review> Reviews { get; set; }
+        public virtual ICollection<Review> Reviews { get; set; }
 
-        public ICollection<Trip> Trips { get; set; }
+        public virtual ICollection<Trip> Trips { get; set; }
     }
 }

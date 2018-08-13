@@ -14,22 +14,24 @@ namespace BusTicket.Data
         {
         }
 
-        public DbSet<BankAccount> BankAccounts { get; set; }
-        public DbSet<BusCompany> BusCompanies { get; set; }
-        public DbSet<BusStation> BusStations { get; set; }
-        public DbSet<Customer> Customers { get; set; }
-        public DbSet<Review> Reviews { get; set; }
-        public DbSet<Ticket> Tickets { get; set; }
-        public DbSet<Town> Towns { get; set; }
-        public DbSet<Trip> Trips { get; set; }
+        public virtual DbSet<BankAccount> BankAccounts { get; set; }
+        public virtual DbSet<BusCompany> BusCompanies { get; set; }
+        public virtual DbSet<BusStation> BusStations { get; set; }
+        public virtual DbSet<Customer> Customers { get; set; }
+        public virtual DbSet<Review> Reviews { get; set; }
+        public virtual DbSet<Ticket> Tickets { get; set; }
+        public virtual DbSet<Town> Towns { get; set; }
+        public virtual DbSet<Trip> Trips { get; set; }
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            if (!optionsBuilder.IsConfigured)
-            {
-                optionsBuilder.UseSqlServer(DbContextConfig.ConnectionString);
-            }
+            optionsBuilder.UseLazyLoadingProxies();
+            optionsBuilder.UseSqlServer(DbContextConfig.ConnectionString);
+            //if (!optionsBuilder.IsConfigured)
+            //{
+            //    optionsBuilder.UseSqlServer(DbContextConfig.ConnectionString);
+            //}
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
