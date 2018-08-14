@@ -15,6 +15,6 @@ namespace ProductShop.Models
         [StringLength(15, MinimumLength = 3, ErrorMessage = "Category name must have min 3 and max 15 chars!")]
         public string Name { get; set; }
 
-        public ICollection<CategoryProduct> CategoryProducts { get; set; }
+        public virtual ICollection<CategoryProduct> CategoryProducts { get; set; }
     }
 }

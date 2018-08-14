@@ -9,4 +9,8 @@
     <ProjectReference Include="..\ProductShop.Data\ProductShop.Data.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Automapper" Version="7.0.1" />
+  </ItemGroup>
+
 </Project>

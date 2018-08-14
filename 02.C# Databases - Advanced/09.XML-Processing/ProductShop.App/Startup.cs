@@ -1,8 +1,11 @@
-﻿using System;
+﻿using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Xml.Linq;
+using System.Xml.Serialization;
+using AutoMapper;
+using Microsoft.EntityFrameworkCore;
+using ProductShop.App.DTOs;
 using ProductShop.Data;
+using ProductShop.Models;
 
 namespace ProductShop.App
 {
@@ -10,40 +13,64 @@ namespace ProductShop.App
     {
         public static void Main()
         {
-            using (var streamReader = new StreamReader("./../../../Resources/users.xml"))
+            MapperInitializer.InitializeMapper();
+
+            var xmlString = File.ReadAllText("./../../../Resources/users.xml");
+
+            var serializer = new XmlSerializer(typeof(UserDto[]), new XmlRootAttribute("users"));
+            var deserializerdUsers = (UserDto[])serializer.Deserialize(new StringReader(xmlString));
+
+            var users = new List<User>();
+
+            foreach (var deserializerdUser in deserializerdUsers)
             {
-                XDocument document = XDocument.Load(streamReader);
-                var elements = document.Root.Elements().ToArray();
+                var userDto = new UserDto(deserializerdUser.FirstName, deserializerdUser.LastName, deserializerdUser.Age);
 
-                foreach (var xElement in elements)
-                {
-                    var attributes = xElement.Attributes();
+                var user = Mapper.Map<User>(userDto);
 
-                    foreach (var xAttribute in attributes)
-                    {
-                        Console.WriteLine($"{xAttribute.Name} - {xAttribute.Value}");
-                    }
-
-                    Console.WriteLine(new string('-', 20));
-                }
+                users.Add(user);
             }
 
-            using (var streamReader = new StreamReader("./../../../Resources/products.xml"))
-            {
-                XDocument document = XDocument.Load(streamReader);
-                var elements = document.Root.Elements();
-            }
-
-            using (var streamReader = new StreamReader("./../../../Resources/categories.xml"))
-            {
-                XDocument document = XDocument.Load(streamReader);
-                var elements = document.Root.Elements();
-            }
-            
             using (var dbContext = new ProductShopDbContext())
             {
-                
+                dbContext.Database.Migrate();
+                dbContext.AddRange(users);
+                dbContext.SaveChanges();
             }
+
+            //using (var streamReader = new StreamReader("./../../../Resources/users.xml"))
+            //{
+            //    using (var dbContext = new ProductShopDbContext())
+            //    {
+            //        dbContext.Database.Migrate();
+            //        XDocument document = XDocument.Load(streamReader);
+            //        var elements = document.Root.Elements().ToArray();
+
+            //        foreach (var xElement in elements)
+            //        {
+            //            var attributes = xElement.Attributes();
+
+            //            var firstName = attributes.FirstOrDefault(x => x.Name == "firstName");
+            //            var lastName = attributes.FirstOrDefault(x => x.Name == "lastName");
+            //            var age = attributes.FirstOrDefault(x => x.Name == "age");
+
+            //            if (firstName != null && lastName != null && age != null)
+            //            {
+            //                UserDto userDto = new UserDto(firstName.Value, lastName.Value, int.Parse(age.Value));
+
+            //                var user = Mapper.Map<User>(userDto);
+
+            //                dbContext
+            //                    .Users
+            //                    .Add(user);
+
+            //                dbContext.SaveChanges();
+            //                Console.WriteLine($" User {firstName.Value} {lastName.Value} Added");
+            //            }
+            //        }
+            //    }
+            //}
+            
         }
     }
 }

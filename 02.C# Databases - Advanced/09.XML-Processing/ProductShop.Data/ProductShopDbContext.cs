@@ -15,16 +15,18 @@ namespace ProductShop.Data
         {    
         }
 
-        public DbSet<Category> Categories { get; set; }
-        public DbSet<CategoryProduct> CategoryProducts { get; set; }
-        public DbSet<Product> Products { get; set; }
-        public DbSet<User> Users { get; set; }
+        public virtual DbSet<Category> Categories { get; set; }
+        public virtual DbSet<CategoryProduct> CategoryProducts { get; set; }
+        public virtual DbSet<Product> Products { get; set; }
+        public virtual DbSet<User> Users { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer(DbContextConfig.ConnectionString);
+                optionsBuilder
+                    .UseLazyLoadingProxies()
+                    .UseSqlServer(DbContextConfig.ConnectionString);
             }
         }
 
