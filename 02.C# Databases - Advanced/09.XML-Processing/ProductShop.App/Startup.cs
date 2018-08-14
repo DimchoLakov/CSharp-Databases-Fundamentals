@@ -13,7 +13,19 @@ namespace ProductShop.App
             using (var streamReader = new StreamReader("./../../../Resources/users.xml"))
             {
                 XDocument document = XDocument.Load(streamReader);
-                var elements = document.Root.Elements();
+                var elements = document.Root.Elements().ToArray();
+
+                foreach (var xElement in elements)
+                {
+                    var attributes = xElement.Attributes();
+
+                    foreach (var xAttribute in attributes)
+                    {
+                        Console.WriteLine($"{xAttribute.Name} - {xAttribute.Value}");
+                    }
+
+                    Console.WriteLine(new string('-', 20));
+                }
             }
 
             using (var streamReader = new StreamReader("./../../../Resources/products.xml"))
