@@ -1,16 +1,16 @@
 ﻿using System.Xml.Serialization;
 
-namespace ProductShop.App.DTOs
+namespace ProductShop.App.DTOs.Import
 {
     [XmlType("user")]
-    public class UserDto
+    public class ImportUserDto
     {
-        public UserDto()
+        public ImportUserDto()
         {
 
         }
 
-        public UserDto(string firstName, string lastName, string age) : this()
+        public ImportUserDto(string firstName, string lastName, string age) : this()
         {
             this.FirstName = firstName;
             this.LastName = lastName;

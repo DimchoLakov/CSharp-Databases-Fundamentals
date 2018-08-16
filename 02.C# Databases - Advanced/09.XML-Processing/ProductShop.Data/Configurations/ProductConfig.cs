@@ -15,7 +15,7 @@ namespace ProductShop.Data.Configurations
                 .Property(x => x.Name)
                 .IsRequired(true)
                 .IsUnicode(true)
-                .HasMaxLength(32);
+                .HasMaxLength(128);
 
             builder
                 .Property(x => x.BuyerId)

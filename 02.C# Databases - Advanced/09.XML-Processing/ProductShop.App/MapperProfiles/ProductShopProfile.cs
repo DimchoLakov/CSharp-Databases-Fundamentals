@@ -1,6 +1,6 @@
-﻿using System;
-using AutoMapper;
-using ProductShop.App.DTOs;
+﻿using AutoMapper;
+using ProductShop.App.DTOs.Export;
+using ProductShop.App.DTOs.Import;
 using ProductShop.Models;
 
 namespace ProductShop.App.MapperProfiles
@@ -9,8 +9,18 @@ namespace ProductShop.App.MapperProfiles
     {
         public ProductShopProfile()
         {
-            CreateMap<User, UserDto>()
+            CreateMap<ImportUserDto, User>()
                 .ReverseMap();
+
+            CreateMap<ProductDto, Product>()
+                .ReverseMap();
+
+            CreateMap<CategoryDto, Category>()
+                .ReverseMap();
+
+            CreateMap<Product, ProductInRangeDto>()
+                .ForMember(dest => dest.BuyerFullName,
+                    from => from.MapFrom(src => $"{src.Buyer.FirstName} {src.Buyer.LastName}"));
         }
     }
 }
