@@ -1,0 +1,2150 @@
+[
+  {
+    "Id": 34,
+    "Make": "Alfa Romeo",
+    "Model": "156",
+    "TravelledDistance": 92233720368547.0
+  },
+  {
+    "Id": 29,
+    "Make": "Alfa Romeo",
+    "Model": "156",
+    "TravelledDistance": 92036854775807.0
+  },
+  {
+    "Id": 33,
+    "Make": "Alfa Romeo",
+    "Model": "164",
+    "TravelledDistance": 92233775807.0
+  },
+  {
+    "Id": 264,
+    "Make": "BMW",
+    "Model": "1M Coupe",
+    "TravelledDistance": 2147.0
+  },
+  {
+    "Id": 146,
+    "Make": "Peugeot",
+    "Model": "206",
+    "TravelledDistance": 922036854775807.0
+  },
+  {
+    "Id": 24,
+    "Make": "Peugeot",
+    "Model": "206",
+    "TravelledDistance": 2147483647.0
+  },
+  {
+    "Id": 140,
+    "Make": "Peugeot",
+    "Model": "206",
+    "TravelledDistance": 922775807.0
+  },
+  {
+    "Id": 139,
+    "Make": "Peugeot",
+    "Model": "206",
+    "TravelledDistance": 214748347.0
+  },
+  {
+    "Id": 148,
+    "Make": "Peugeot",
+    "Model": "206",
+    "TravelledDistance": 21474647.0
+  },
+  {
+    "Id": 26,
+    "Make": "Peugeot",
+    "Model": "206",
+    "TravelledDistance": 214647.0
+  },
+  {
+    "Id": 6,
+    "Make": "Ferrari",
+    "Model": "250 GTO",
+    "TravelledDistance": 2183647.0
+  },
+  {
+    "Id": 9,
+    "Make": "Ferrari",
+    "Model": "250 GTO",
+    "TravelledDistance": 214747.0
+  },
+  {
+    "Id": 14,
+    "Make": "Ferrari",
+    "Model": "250 GTO",
+    "TravelledDistance": 214747.0
+  },
+  {
+    "Id": 4,
+    "Make": "Ferrari",
+    "Model": "250 GTO",
+    "TravelledDistance": 213647.0
+  },
+  {
+    "Id": 22,
+    "Make": "Ferrari",
+    "Model": "250 GTO",
+    "TravelledDistance": 213647.0
+  },
+  {
+    "Id": 12,
+    "Make": "Ferrari",
+    "Model": "275",
+    "TravelledDistance": 92854775807.0
+  },
+  {
+    "Id": 32,
+    "Make": "Ferrari",
+    "Model": "275",
+    "TravelledDistance": 2147647.0
+  },
+  {
+    "Id": 7,
+    "Make": "Ferrari",
+    "Model": "275",
+    "TravelledDistance": 214647.0
+  },
+  {
+    "Id": 88,
+    "Make": "Peugeot",
+    "Model": "306",
+    "TravelledDistance": 2036854775807.0
+  },
+  {
+    "Id": 143,
+    "Make": "Peugeot",
+    "Model": "306",
+    "TravelledDistance": 2147483647.0
+  },
+  {
+    "Id": 153,
+    "Make": "Peugeot",
+    "Model": "306",
+    "TravelledDistance": 2147483647.0
+  },
+  {
+    "Id": 150,
+    "Make": "Peugeot",
+    "Model": "306",
+    "TravelledDistance": 21474647.0
+  },
+  {
+    "Id": 141,
+    "Make": "Peugeot",
+    "Model": "308",
+    "TravelledDistance": 2147483647.0
+  },
+  {
+    "Id": 152,
+    "Make": "Peugeot",
+    "Model": "308",
+    "TravelledDistance": 854775807.0
+  },
+  {
+    "Id": 89,
+    "Make": "Peugeot",
+    "Model": "308",
+    "TravelledDistance": 775807.0
+  },
+  {
+    "Id": 154,
+    "Make": "Peugeot",
+    "Model": "308",
+    "TravelledDistance": 23647.0
+  },
+  {
+    "Id": 271,
+    "Make": "Nissan",
+    "Model": "370Z",
+    "TravelledDistance": 922337205807.0
+  },
+  {
+    "Id": 278,
+    "Make": "Nissan",
+    "Model": "370Z",
+    "TravelledDistance": 922775807.0
+  },
+  {
+    "Id": 282,
+    "Make": "Nissan",
+    "Model": "370Z",
+    "TravelledDistance": 2143647.0
+  },
+  {
+    "Id": 292,
+    "Make": "Nissan",
+    "Model": "370Z",
+    "TravelledDistance": 922307.0
+  },
+  {
+    "Id": 277,
+    "Make": "Nissan",
+    "Model": "370Z",
+    "TravelledDistance": 21477.0
+  },
+  {
+    "Id": 275,
+    "Make": "Nissan",
+    "Model": "370Z",
+    "TravelledDistance": 21447.0
+  },
+  {
+    "Id": 25,
+    "Make": "Peugeot",
+    "Model": "405",
+    "TravelledDistance": 92236854775807.0
+  },
+  {
+    "Id": 142,
+    "Make": "Peugeot",
+    "Model": "405",
+    "TravelledDistance": 92233854775807.0
+  },
+  {
+    "Id": 145,
+    "Make": "Peugeot",
+    "Model": "405",
+    "TravelledDistance": 92036854775807.0
+  },
+  {
+    "Id": 151,
+    "Make": "Peugeot",
+    "Model": "405",
+    "TravelledDistance": 9226854775807.0
+  },
+  {
+    "Id": 87,
+    "Make": "Peugeot",
+    "Model": "405",
+    "TravelledDistance": 922854775807.0
+  },
+  {
+    "Id": 149,
+    "Make": "Peugeot",
+    "Model": "407",
+    "TravelledDistance": 922036854775807.0
+  },
+  {
+    "Id": 147,
+    "Make": "Peugeot",
+    "Model": "407",
+    "TravelledDistance": 9223372775807.0
+  },
+  {
+    "Id": 90,
+    "Make": "Peugeot",
+    "Model": "407",
+    "TravelledDistance": 854775807.0
+  },
+  {
+    "Id": 186,
+    "Make": "Fiat",
+    "Model": "500 (2007) Abarth 695 Tributo Maserati",
+    "TravelledDistance": 92236854775807.0
+  },
+  {
+    "Id": 191,
+    "Make": "Fiat",
+    "Model": "500 (2007) Abarth 695 Tributo Maserati",
+    "TravelledDistance": 922337205807.0
+  },
+  {
+    "Id": 248,
+    "Make": "Fiat",
+    "Model": "500 (2007) Abarth 695 Tributo Maserati",
+    "TravelledDistance": 214747.0
+  },
+  {
+    "Id": 190,
+    "Make": "Fiat",
+    "Model": "500L",
+    "TravelledDistance": 922337204775807.0
+  },
+  {
+    "Id": 184,
+    "Make": "Fiat",
+    "Model": "500L",
+    "TravelledDistance": 922337203675807.0
+  },
+  {
+    "Id": 192,
+    "Make": "Fiat",
+    "Model": "500L",
+    "TravelledDistance": 92233754775807.0
+  },
+  {
+    "Id": 198,
+    "Make": "Fiat",
+    "Model": "500L",
+    "TravelledDistance": 21474847.0
+  },
+  {
+    "Id": 193,
+    "Make": "Fiat",
+    "Model": "500L",
+    "TravelledDistance": 2147647.0
+  },
+  {
+    "Id": 31,
+    "Make": "Alfa Romeo",
+    "Model": "75",
+    "TravelledDistance": 72036854775807.0
+  },
+  {
+    "Id": 36,
+    "Make": "Alfa Romeo",
+    "Model": "75",
+    "TravelledDistance": 9223372775807.0
+  },
+  {
+    "Id": 27,
+    "Make": "Alfa Romeo",
+    "Model": "75",
+    "TravelledDistance": 9775807.0
+  },
+  {
+    "Id": 183,
+    "Make": "Mercedes",
+    "Model": "A 140",
+    "TravelledDistance": 92233754775807.0
+  },
+  {
+    "Id": 181,
+    "Make": "Mercedes",
+    "Model": "A 160",
+    "TravelledDistance": 9223372036.0
+  },
+  {
+    "Id": 189,
+    "Make": "Mercedes",
+    "Model": "A 160 CDI",
+    "TravelledDistance": 4775807.0
+  },
+  {
+    "Id": 221,
+    "Make": "Mercedes",
+    "Model": "A 170 CDI",
+    "TravelledDistance": 9223775807.0
+  },
+  {
+    "Id": 58,
+    "Make": "Renault",
+    "Model": "Alaskan",
+    "TravelledDistance": 92233720375807.0
+  },
+  {
+    "Id": 55,
+    "Make": "Renault",
+    "Model": "Alaskan",
+    "TravelledDistance": 2147483647.0
+  },
+  {
+    "Id": 61,
+    "Make": "Renault",
+    "Model": "Alaskan",
+    "TravelledDistance": 2147483647.0
+  },
+  {
+    "Id": 63,
+    "Make": "Renault",
+    "Model": "Alaskan",
+    "TravelledDistance": 2147483647.0
+  },
+  {
+    "Id": 133,
+    "Make": "Renault",
+    "Model": "Alaskan",
+    "TravelledDistance": 92807.0
+  },
+  {
+    "Id": 56,
+    "Make": "Renault",
+    "Model": "Alaskan",
+    "TravelledDistance": 21447.0
+  },
+  {
+    "Id": 180,
+    "Make": "Renault",
+    "Model": "Alaskan",
+    "TravelledDistance": 2647.0
+  },
+  {
+    "Id": 37,
+    "Make": "Alfa Romeo",
+    "Model": "Alfetta",
+    "TravelledDistance": 92233720775807.0
+  },
+  {
+    "Id": 284,
+    "Make": "Nissan",
+    "Model": "Altima",
+    "TravelledDistance": 9223372775807.0
+  },
+  {
+    "Id": 289,
+    "Make": "Nissan",
+    "Model": "Altima",
+    "TravelledDistance": 9224775807.0
+  },
+  {
+    "Id": 304,
+    "Make": "Nissan",
+    "Model": "Altima",
+    "TravelledDistance": 2147483647.0
+  },
+  {
+    "Id": 274,
+    "Make": "Nissan",
+    "Model": "Altima",
+    "TravelledDistance": 92233707.0
+  },
+  {
+    "Id": 291,
+    "Make": "Nissan",
+    "Model": "Altima",
+    "TravelledDistance": 2147447.0
+  },
+  {
+    "Id": 307,
+    "Make": "Nissan",
+    "Model": "Altima",
+    "TravelledDistance": 214747.0
+  },
+  {
+    "Id": 272,
+    "Make": "Nissan",
+    "Model": "Altima",
+    "TravelledDistance": 214647.0
+  },
+  {
+    "Id": 309,
+    "Make": "Nissan",
+    "Model": "Altima",
+    "TravelledDistance": 213647.0
+  },
+  {
+    "Id": 276,
+    "Make": "Nissan",
+    "Model": "Altima",
+    "TravelledDistance": 2147.0
+  },
+  {
+    "Id": 35,
+    "Make": "Alfa Romeo",
+    "Model": "AR51",
+    "TravelledDistance": 922337275807.0
+  },
+  {
+    "Id": 38,
+    "Make": "Alfa Romeo",
+    "Model": "AR51",
+    "TravelledDistance": 2147483647.0
+  },
+  {
+    "Id": 243,
+    "Make": "Opel",
+    "Model": "Astra",
+    "TravelledDistance": 9.2233720368547758E+18
+  },
+  {
+    "Id": 242,
+    "Make": "Opel",
+    "Model": "Astra",
+    "TravelledDistance": 922337203685807.0
+  },
+  {
+    "Id": 237,
+    "Make": "Opel",
+    "Model": "Astra",
+    "TravelledDistance": 922336854775807.0
+  },
+  {
+    "Id": 232,
+    "Make": "Opel",
+    "Model": "Astra",
+    "TravelledDistance": 2147483647.0
+  },
+  {
+    "Id": 136,
+    "Make": "Citroen",
+    "Model": "Berlingo",
+    "TravelledDistance": 9223354775807.0
+  },
+  {
+    "Id": 138,
+    "Make": "Citroen",
+    "Model": "Berlingo",
+    "TravelledDistance": 922354775807.0
+  },
+  {
+    "Id": 173,
+    "Make": "Citroen",
+    "Model": "C1",
+    "TravelledDistance": 922337854775807.0
+  },
+  {
+    "Id": 169,
+    "Make": "Citroen",
+    "Model": "C1",
+    "TravelledDistance": 922336854775807.0
+  },
+  {
+    "Id": 162,
+    "Make": "Citroen",
+    "Model": "C1",
+    "TravelledDistance": 92236854775807.0
+  },
+  {
+    "Id": 135,
+    "Make": "Citroen",
+    "Model": "C1",
+    "TravelledDistance": 9854775807.0
+  },
+  {
+    "Id": 159,
+    "Make": "Citroen",
+    "Model": "C1",
+    "TravelledDistance": 9223775807.0
+  },
+  {
+    "Id": 165,
+    "Make": "Citroen",
+    "Model": "C1",
+    "TravelledDistance": 2147483647.0
+  },
+  {
+    "Id": 137,
+    "Make": "Citroen",
+    "Model": "C1",
+    "TravelledDistance": 924775807.0
+  },
+  {
+    "Id": 171,
+    "Make": "Citroen",
+    "Model": "C1",
+    "TravelledDistance": 2483647.0
+  },
+  {
+    "Id": 176,
+    "Make": "Citroen",
+    "Model": "C1",
+    "TravelledDistance": 2147.0
+  },
+  {
+    "Id": 164,
+    "Make": "Citroen",
+    "Model": "C3",
+    "TravelledDistance": 9223336854775808.0
+  },
+  {
+    "Id": 167,
+    "Make": "Citroen",
+    "Model": "C3",
+    "TravelledDistance": 2147647.0
+  },
+  {
+    "Id": 160,
+    "Make": "Citroen",
+    "Model": "C3",
+    "TravelledDistance": 2147647.0
+  },
+  {
+    "Id": 172,
+    "Make": "Citroen",
+    "Model": "C3",
+    "TravelledDistance": 214647.0
+  },
+  {
+    "Id": 170,
+    "Make": "Citroen",
+    "Model": "C4",
+    "TravelledDistance": 92236854775807.0
+  },
+  {
+    "Id": 175,
+    "Make": "Citroen",
+    "Model": "C4",
+    "TravelledDistance": 2147487.0
+  },
+  {
+    "Id": 161,
+    "Make": "Citroen",
+    "Model": "C4",
+    "TravelledDistance": 213647.0
+  },
+  {
+    "Id": 174,
+    "Make": "Citroen",
+    "Model": "C5",
+    "TravelledDistance": 922337204775807.0
+  },
+  {
+    "Id": 144,
+    "Make": "Citroen",
+    "Model": "C5",
+    "TravelledDistance": 922334775807.0
+  },
+  {
+    "Id": 168,
+    "Make": "Citroen",
+    "Model": "C5",
+    "TravelledDistance": 2147483647.0
+  },
+  {
+    "Id": 158,
+    "Make": "Citroen",
+    "Model": "C5",
+    "TravelledDistance": 2183647.0
+  },
+  {
+    "Id": 155,
+    "Make": "Citroen",
+    "Model": "C5",
+    "TravelledDistance": 213647.0
+  },
+  {
+    "Id": 166,
+    "Make": "Citroen",
+    "Model": "C8",
+    "TravelledDistance": 92236854775807.0
+  },
+  {
+    "Id": 156,
+    "Make": "Citroen",
+    "Model": "C8",
+    "TravelledDistance": 2147447.0
+  },
+  {
+    "Id": 177,
+    "Make": "Citroen",
+    "Model": "C8",
+    "TravelledDistance": 83647.0
+  },
+  {
+    "Id": 51,
+    "Make": "Chevy",
+    "Model": "Camaro",
+    "TravelledDistance": 92233854775807.0
+  },
+  {
+    "Id": 86,
+    "Make": "Chevy",
+    "Model": "Camaro",
+    "TravelledDistance": 2147483647.0
+  },
+  {
+    "Id": 49,
+    "Make": "Chevy",
+    "Model": "Camaro",
+    "TravelledDistance": 922335807.0
+  },
+  {
+    "Id": 67,
+    "Make": "Chevy",
+    "Model": "Camaro",
+    "TravelledDistance": 21473647.0
+  },
+  {
+    "Id": 82,
+    "Make": "Chevy",
+    "Model": "Camaro",
+    "TravelledDistance": 2147487.0
+  },
+  {
+    "Id": 46,
+    "Make": "Chevy",
+    "Model": "Camaro",
+    "TravelledDistance": 283647.0
+  },
+  {
+    "Id": 353,
+    "Make": "Toyota",
+    "Model": "Camry Hybrid",
+    "TravelledDistance": 954775807.0
+  },
+  {
+    "Id": 336,
+    "Make": "Toyota",
+    "Model": "Camry Hybrid",
+    "TravelledDistance": 92275807.0
+  },
+  {
+    "Id": 357,
+    "Make": "Toyota",
+    "Model": "Camry Hybrid",
+    "TravelledDistance": 2143647.0
+  },
+  {
+    "Id": 312,
+    "Make": "Toyota",
+    "Model": "Camry Hybrid",
+    "TravelledDistance": 214647.0
+  },
+  {
+    "Id": 286,
+    "Make": "Toyota",
+    "Model": "Camry Hybrid",
+    "TravelledDistance": 214647.0
+  },
+  {
+    "Id": 79,
+    "Make": "Chevy",
+    "Model": "Caprice",
+    "TravelledDistance": 9223372034775808.0
+  },
+  {
+    "Id": 81,
+    "Make": "Chevy",
+    "Model": "Caprice",
+    "TravelledDistance": 2147483647.0
+  },
+  {
+    "Id": 50,
+    "Make": "Chevy",
+    "Model": "Caprice",
+    "TravelledDistance": 2147647.0
+  },
+  {
+    "Id": 48,
+    "Make": "Chevy",
+    "Model": "Caprice",
+    "TravelledDistance": 2143647.0
+  },
+  {
+    "Id": 53,
+    "Make": "Renault",
+    "Model": "Captur",
+    "TravelledDistance": 92233724775807.0
+  },
+  {
+    "Id": 57,
+    "Make": "Renault",
+    "Model": "Captur",
+    "TravelledDistance": 9223807.0
+  },
+  {
+    "Id": 92,
+    "Make": "Skoda",
+    "Model": "Citigo",
+    "TravelledDistance": 92233854775807.0
+  },
+  {
+    "Id": 91,
+    "Make": "Skoda",
+    "Model": "Citigo",
+    "TravelledDistance": 2183647.0
+  },
+  {
+    "Id": 99,
+    "Make": "Skoda",
+    "Model": "Citigo",
+    "TravelledDistance": 214747.0
+  },
+  {
+    "Id": 94,
+    "Make": "Skoda",
+    "Model": "Citigo",
+    "TravelledDistance": 214647.0
+  },
+  {
+    "Id": 111,
+    "Make": "Skoda",
+    "Model": "Citigo",
+    "TravelledDistance": 214647.0
+  },
+  {
+    "Id": 60,
+    "Make": "Renault",
+    "Model": "Clio IV",
+    "TravelledDistance": 92234775807.0
+  },
+  {
+    "Id": 179,
+    "Make": "Renault",
+    "Model": "Clio IV",
+    "TravelledDistance": 2147483647.0
+  },
+  {
+    "Id": 316,
+    "Make": "Toyota",
+    "Model": "Corolla",
+    "TravelledDistance": 9223854775807.0
+  },
+  {
+    "Id": 337,
+    "Make": "Toyota",
+    "Model": "Corolla",
+    "TravelledDistance": 92235807.0
+  },
+  {
+    "Id": 355,
+    "Make": "Toyota",
+    "Model": "Corolla",
+    "TravelledDistance": 9223807.0
+  },
+  {
+    "Id": 348,
+    "Make": "Toyota",
+    "Model": "Corolla",
+    "TravelledDistance": 975807.0
+  },
+  {
+    "Id": 346,
+    "Make": "Toyota",
+    "Model": "Corolla",
+    "TravelledDistance": 21477.0
+  },
+  {
+    "Id": 350,
+    "Make": "Toyota",
+    "Model": "Corolla",
+    "TravelledDistance": 2147.0
+  },
+  {
+    "Id": 230,
+    "Make": "Opel",
+    "Model": "Corsa",
+    "TravelledDistance": 2147483647.0
+  },
+  {
+    "Id": 236,
+    "Make": "Opel",
+    "Model": "Corsa",
+    "TravelledDistance": 21474847.0
+  },
+  {
+    "Id": 241,
+    "Make": "Opel",
+    "Model": "Corsa",
+    "TravelledDistance": 214747.0
+  },
+  {
+    "Id": 227,
+    "Make": "Opel",
+    "Model": "Corsa",
+    "TravelledDistance": 2.0
+  },
+  {
+    "Id": 85,
+    "Make": "Chevy",
+    "Model": "Corvette",
+    "TravelledDistance": 92233720375807.0
+  },
+  {
+    "Id": 83,
+    "Make": "Chevy",
+    "Model": "Corvette",
+    "TravelledDistance": 21474847.0
+  },
+  {
+    "Id": 80,
+    "Make": "Chevy",
+    "Model": "Cruze",
+    "TravelledDistance": 9223372034775808.0
+  },
+  {
+    "Id": 84,
+    "Make": "Chevy",
+    "Model": "Cruze",
+    "TravelledDistance": 92775807.0
+  },
+  {
+    "Id": 73,
+    "Make": "Rolls-Royce",
+    "Model": "Dawn",
+    "TravelledDistance": 214647.0
+  },
+  {
+    "Id": 15,
+    "Make": "Ferrari",
+    "Model": "Daytona",
+    "TravelledDistance": 92036854775807.0
+  },
+  {
+    "Id": 8,
+    "Make": "Ferrari",
+    "Model": "Daytona",
+    "TravelledDistance": 922337275807.0
+  },
+  {
+    "Id": 41,
+    "Make": "Ferrari",
+    "Model": "Daytona",
+    "TravelledDistance": 2147447.0
+  },
+  {
+    "Id": 2,
+    "Make": "Ferrari",
+    "Model": "Daytona",
+    "TravelledDistance": 213647.0
+  },
+  {
+    "Id": 16,
+    "Make": "Lamborghini",
+    "Model": "Diablo",
+    "TravelledDistance": 2147483647.0
+  },
+  {
+    "Id": 21,
+    "Make": "Lamborghini",
+    "Model": "Diablo",
+    "TravelledDistance": 283647.0
+  },
+  {
+    "Id": 118,
+    "Make": "Dacia",
+    "Model": "Dokker",
+    "TravelledDistance": 2147647.0
+  },
+  {
+    "Id": 116,
+    "Make": "Dacia",
+    "Model": "Dokker",
+    "TravelledDistance": 2147447.0
+  },
+  {
+    "Id": 122,
+    "Make": "Dacia",
+    "Model": "Dokker",
+    "TravelledDistance": 213647.0
+  },
+  {
+    "Id": 62,
+    "Make": "Renault",
+    "Model": "Duster",
+    "TravelledDistance": 922337203685807.0
+  },
+  {
+    "Id": 59,
+    "Make": "Renault",
+    "Model": "Duster",
+    "TravelledDistance": 922337203685807.0
+  },
+  {
+    "Id": 178,
+    "Make": "Renault",
+    "Model": "Duster",
+    "TravelledDistance": 2147483647.0
+  },
+  {
+    "Id": 268,
+    "Make": "Dacia",
+    "Model": "Duster",
+    "TravelledDistance": 922375807.0
+  },
+  {
+    "Id": 114,
+    "Make": "Dacia",
+    "Model": "Duster",
+    "TravelledDistance": 21447.0
+  },
+  {
+    "Id": 262,
+    "Make": "BMW",
+    "Model": "E67",
+    "TravelledDistance": 21447.0
+  },
+  {
+    "Id": 266,
+    "Make": "BMW",
+    "Model": "E88",
+    "TravelledDistance": 200000.0
+  },
+  {
+    "Id": 157,
+    "Make": "Citroen",
+    "Model": "Elysée",
+    "TravelledDistance": 922354775807.0
+  },
+  {
+    "Id": 163,
+    "Make": "Citroen",
+    "Model": "Elysée",
+    "TravelledDistance": 23336854775.0
+  },
+  {
+    "Id": 23,
+    "Make": "Ferrari",
+    "Model": "Enzo",
+    "TravelledDistance": 2147483647.0
+  },
+  {
+    "Id": 64,
+    "Make": "Renault",
+    "Model": "Espace",
+    "TravelledDistance": 9223375807.0
+  },
+  {
+    "Id": 52,
+    "Make": "Renault",
+    "Model": "Espace",
+    "TravelledDistance": 2147487.0
+  },
+  {
+    "Id": 258,
+    "Make": "BMW",
+    "Model": "F04",
+    "TravelledDistance": 2143647.0
+  },
+  {
+    "Id": 253,
+    "Make": "BMW",
+    "Model": "F04",
+    "TravelledDistance": 483647.0
+  },
+  {
+    "Id": 247,
+    "Make": "BMW",
+    "Model": "F04",
+    "TravelledDistance": 100000.0
+  },
+  {
+    "Id": 234,
+    "Make": "BMW",
+    "Model": "F20",
+    "TravelledDistance": 2147483647.0
+  },
+  {
+    "Id": 252,
+    "Make": "BMW",
+    "Model": "F20",
+    "TravelledDistance": 975807.0
+  },
+  {
+    "Id": 255,
+    "Make": "BMW",
+    "Model": "F20",
+    "TravelledDistance": 83647.0
+  },
+  {
+    "Id": 259,
+    "Make": "BMW",
+    "Model": "F20",
+    "TravelledDistance": 21447.0
+  },
+  {
+    "Id": 245,
+    "Make": "BMW",
+    "Model": "F25",
+    "TravelledDistance": 9.2233720368547758E+18
+  },
+  {
+    "Id": 5,
+    "Make": "Ferrari",
+    "Model": "F40",
+    "TravelledDistance": 214647.0
+  },
+  {
+    "Id": 10,
+    "Make": "Ferrari",
+    "Model": "F40",
+    "TravelledDistance": 21447.0
+  },
+  {
+    "Id": 11,
+    "Make": "Ferrari",
+    "Model": "F40",
+    "TravelledDistance": 2647.0
+  },
+  {
+    "Id": 20,
+    "Make": "Ferrari",
+    "Model": "F430",
+    "TravelledDistance": 92236854775807.0
+  },
+  {
+    "Id": 13,
+    "Make": "Ferrari",
+    "Model": "F430",
+    "TravelledDistance": 2147647.0
+  },
+  {
+    "Id": 3,
+    "Make": "Ferrari",
+    "Model": "F430",
+    "TravelledDistance": 214647.0
+  },
+  {
+    "Id": 110,
+    "Make": "Skoda",
+    "Model": "Fabia",
+    "TravelledDistance": 9223372036875808.0
+  },
+  {
+    "Id": 129,
+    "Make": "Skoda",
+    "Model": "Fabia",
+    "TravelledDistance": 922337203775807.0
+  },
+  {
+    "Id": 126,
+    "Make": "Skoda",
+    "Model": "Fabia",
+    "TravelledDistance": 92233720368807.0
+  },
+  {
+    "Id": 112,
+    "Make": "Skoda",
+    "Model": "Fabia",
+    "TravelledDistance": 214747.0
+  },
+  {
+    "Id": 130,
+    "Make": "Skoda",
+    "Model": "Fabia",
+    "TravelledDistance": 214647.0
+  },
+  {
+    "Id": 331,
+    "Make": "Ford",
+    "Model": "Fiesta",
+    "TravelledDistance": 922337775807.0
+  },
+  {
+    "Id": 329,
+    "Make": "Ford",
+    "Model": "Fiesta",
+    "TravelledDistance": 922375807.0
+  },
+  {
+    "Id": 223,
+    "Make": "Ford",
+    "Model": "Fiesta",
+    "TravelledDistance": 2143647.0
+  },
+  {
+    "Id": 208,
+    "Make": "Ford",
+    "Model": "Fiesta",
+    "TravelledDistance": 922807.0
+  },
+  {
+    "Id": 205,
+    "Make": "Ford",
+    "Model": "Fiesta",
+    "TravelledDistance": 214647.0
+  },
+  {
+    "Id": 326,
+    "Make": "Ford",
+    "Model": "Fiesta",
+    "TravelledDistance": 214647.0
+  },
+  {
+    "Id": 196,
+    "Make": "Fiat",
+    "Model": "Freemont",
+    "TravelledDistance": 92233685477.0
+  },
+  {
+    "Id": 188,
+    "Make": "Fiat",
+    "Model": "Freemont",
+    "TravelledDistance": 21473647.0
+  },
+  {
+    "Id": 185,
+    "Make": "Fiat",
+    "Model": "Freemont",
+    "TravelledDistance": 2147647.0
+  },
+  {
+    "Id": 222,
+    "Make": "Fiat",
+    "Model": "Freemont",
+    "TravelledDistance": 214647.0
+  },
+  {
+    "Id": 19,
+    "Make": "Lamborghini",
+    "Model": "Gallardo",
+    "TravelledDistance": 9223372054775808.0
+  },
+  {
+    "Id": 17,
+    "Make": "Lamborghini",
+    "Model": "Gallardo",
+    "TravelledDistance": 923372054775807.0
+  },
+  {
+    "Id": 44,
+    "Make": "Lamborghini",
+    "Model": "Gallardo",
+    "TravelledDistance": 92234775807.0
+  },
+  {
+    "Id": 74,
+    "Make": "Rolls-Royce",
+    "Model": "Ghost",
+    "TravelledDistance": 21473647.0
+  },
+  {
+    "Id": 71,
+    "Make": "Rolls-Royce",
+    "Model": "Ghost",
+    "TravelledDistance": 214747.0
+  },
+  {
+    "Id": 40,
+    "Make": "Alfa Romeo",
+    "Model": "Giulia",
+    "TravelledDistance": 214647.0
+  },
+  {
+    "Id": 42,
+    "Make": "Alfa Romeo",
+    "Model": "Giulietta",
+    "TravelledDistance": 922337203685807.0
+  },
+  {
+    "Id": 28,
+    "Make": "Alfa Romeo",
+    "Model": "Giulietta",
+    "TravelledDistance": 2036854775807.0
+  },
+  {
+    "Id": 30,
+    "Make": "Alfa Romeo",
+    "Model": "Giulietta",
+    "TravelledDistance": 2036854775807.0
+  },
+  {
+    "Id": 39,
+    "Make": "Alfa Romeo",
+    "Model": "Giulietta",
+    "TravelledDistance": 21474847.0
+  },
+  {
+    "Id": 270,
+    "Make": "Ford",
+    "Model": "GT40",
+    "TravelledDistance": 92233775807.0
+  },
+  {
+    "Id": 332,
+    "Make": "Ford",
+    "Model": "GT40",
+    "TravelledDistance": 9223377.0
+  },
+  {
+    "Id": 279,
+    "Make": "Nissan",
+    "Model": "GT-R",
+    "TravelledDistance": 96854775807.0
+  },
+  {
+    "Id": 305,
+    "Make": "Nissan",
+    "Model": "GT-R",
+    "TravelledDistance": 2147483647.0
+  },
+  {
+    "Id": 273,
+    "Make": "Nissan",
+    "Model": "GT-R",
+    "TravelledDistance": 954775807.0
+  },
+  {
+    "Id": 285,
+    "Make": "Nissan",
+    "Model": "GT-R",
+    "TravelledDistance": 21473647.0
+  },
+  {
+    "Id": 283,
+    "Make": "Nissan",
+    "Model": "GT-R",
+    "TravelledDistance": 2147647.0
+  },
+  {
+    "Id": 311,
+    "Make": "Nissan",
+    "Model": "GT-R",
+    "TravelledDistance": 2147447.0
+  },
+  {
+    "Id": 308,
+    "Make": "Nissan",
+    "Model": "GT-R",
+    "TravelledDistance": 2143647.0
+  },
+  {
+    "Id": 302,
+    "Make": "Nissan",
+    "Model": "GT-R",
+    "TravelledDistance": 2143647.0
+  },
+  {
+    "Id": 280,
+    "Make": "Nissan",
+    "Model": "GT-R",
+    "TravelledDistance": 23647.0
+  },
+  {
+    "Id": 281,
+    "Make": "Nissan",
+    "Model": "GT-R",
+    "TravelledDistance": 21477.0
+  },
+  {
+    "Id": 300,
+    "Make": "Great Wall",
+    "Model": "H2",
+    "TravelledDistance": 9236854775807.0
+  },
+  {
+    "Id": 298,
+    "Make": "Great Wall",
+    "Model": "H2",
+    "TravelledDistance": 21647.0
+  },
+  {
+    "Id": 297,
+    "Make": "Great Wall",
+    "Model": "H8",
+    "TravelledDistance": 21447.0
+  },
+  {
+    "Id": 293,
+    "Make": "Great Wall",
+    "Model": "Haval H6",
+    "TravelledDistance": 214747.0
+  },
+  {
+    "Id": 294,
+    "Make": "Great Wall",
+    "Model": "Haval M4",
+    "TravelledDistance": 9223372035807.0
+  },
+  {
+    "Id": 299,
+    "Make": "Great Wall",
+    "Model": "Haval M4",
+    "TravelledDistance": 213647.0
+  },
+  {
+    "Id": 102,
+    "Make": "Seat",
+    "Model": "Ibiza",
+    "TravelledDistance": 92234775807.0
+  },
+  {
+    "Id": 97,
+    "Make": "Seat",
+    "Model": "Ibiza",
+    "TravelledDistance": 21474847.0
+  },
+  {
+    "Id": 106,
+    "Make": "Seat",
+    "Model": "Ibiza",
+    "TravelledDistance": 213647.0
+  },
+  {
+    "Id": 108,
+    "Make": "Seat",
+    "Model": "Ibiza",
+    "TravelledDistance": 21647.0
+  },
+  {
+    "Id": 66,
+    "Make": "Chevy",
+    "Model": "Impala",
+    "TravelledDistance": 214748347.0
+  },
+  {
+    "Id": 54,
+    "Make": "Chevy",
+    "Model": "Impala",
+    "TravelledDistance": 214747.0
+  },
+  {
+    "Id": 235,
+    "Make": "Opel",
+    "Model": "Insignia",
+    "TravelledDistance": 9.2233720368547758E+18
+  },
+  {
+    "Id": 229,
+    "Make": "Opel",
+    "Model": "Insignia",
+    "TravelledDistance": 9.2233720368547758E+18
+  },
+  {
+    "Id": 238,
+    "Make": "Opel",
+    "Model": "Insignia",
+    "TravelledDistance": 2147483647.0
+  },
+  {
+    "Id": 240,
+    "Make": "Opel",
+    "Model": "Kadet",
+    "TravelledDistance": 21474847.0
+  },
+  {
+    "Id": 125,
+    "Make": "Dacia",
+    "Model": "Logan",
+    "TravelledDistance": 9036854775807.0
+  },
+  {
+    "Id": 115,
+    "Make": "Dacia",
+    "Model": "Logan",
+    "TravelledDistance": 922337203687.0
+  },
+  {
+    "Id": 120,
+    "Make": "Dacia",
+    "Model": "Logan",
+    "TravelledDistance": 21474647.0
+  },
+  {
+    "Id": 119,
+    "Make": "Dacia",
+    "Model": "Logan",
+    "TravelledDistance": 9275807.0
+  },
+  {
+    "Id": 358,
+    "Make": "Dacia",
+    "Model": "Logan",
+    "TravelledDistance": 213647.0
+  },
+  {
+    "Id": 265,
+    "Make": "BMW",
+    "Model": "M Roadster E85",
+    "TravelledDistance": 92233720365807.0
+  },
+  {
+    "Id": 257,
+    "Make": "BMW",
+    "Model": "M5 F10",
+    "TravelledDistance": 27483647.0
+  },
+  {
+    "Id": 246,
+    "Make": "BMW",
+    "Model": "M5 F10",
+    "TravelledDistance": 10.0
+  },
+  {
+    "Id": 261,
+    "Make": "BMW",
+    "Model": "M6 E63",
+    "TravelledDistance": 92235807.0
+  },
+  {
+    "Id": 251,
+    "Make": "BMW",
+    "Model": "M6 E63",
+    "TravelledDistance": 214747.0
+  },
+  {
+    "Id": 260,
+    "Make": "BMW",
+    "Model": "M6 E63",
+    "TravelledDistance": 2147.0
+  },
+  {
+    "Id": 47,
+    "Make": "Chevy",
+    "Model": "Malibu",
+    "TravelledDistance": 92233854775807.0
+  },
+  {
+    "Id": 65,
+    "Make": "Chevy",
+    "Model": "Malibu",
+    "TravelledDistance": 922337775807.0
+  },
+  {
+    "Id": 78,
+    "Make": "Chevy",
+    "Model": "Matiz",
+    "TravelledDistance": 922337203685807.0
+  },
+  {
+    "Id": 95,
+    "Make": "Seat",
+    "Model": "Mii",
+    "TravelledDistance": 92236854775807.0
+  },
+  {
+    "Id": 101,
+    "Make": "Seat",
+    "Model": "Mii",
+    "TravelledDistance": 936854775807.0
+  },
+  {
+    "Id": 132,
+    "Make": "Seat",
+    "Model": "Mii",
+    "TravelledDistance": 214783647.0
+  },
+  {
+    "Id": 107,
+    "Make": "Seat",
+    "Model": "Mii",
+    "TravelledDistance": 2147447.0
+  },
+  {
+    "Id": 100,
+    "Make": "Seat",
+    "Model": "Mii",
+    "TravelledDistance": 214747.0
+  },
+  {
+    "Id": 105,
+    "Make": "Seat",
+    "Model": "Mii",
+    "TravelledDistance": 21447.0
+  },
+  {
+    "Id": 18,
+    "Make": "Lamborghini",
+    "Model": "Murciélago",
+    "TravelledDistance": 214783647.0
+  },
+  {
+    "Id": 43,
+    "Make": "Lamborghini",
+    "Model": "Murciélago",
+    "TravelledDistance": 2143647.0
+  },
+  {
+    "Id": 228,
+    "Make": "Opel",
+    "Model": "Omega",
+    "TravelledDistance": 9223336854775808.0
+  },
+  {
+    "Id": 244,
+    "Make": "Opel",
+    "Model": "Omega",
+    "TravelledDistance": 2147483647.0
+  },
+  {
+    "Id": 231,
+    "Make": "Opel",
+    "Model": "Omega",
+    "TravelledDistance": 2147483647.0
+  },
+  {
+    "Id": 1,
+    "Make": "Opel",
+    "Model": "Omega",
+    "TravelledDistance": 2147483647.0
+  },
+  {
+    "Id": 226,
+    "Make": "Opel",
+    "Model": "Omega",
+    "TravelledDistance": 1.0
+  },
+  {
+    "Id": 250,
+    "Make": "Fiat",
+    "Model": "Panda",
+    "TravelledDistance": 92233854775807.0
+  },
+  {
+    "Id": 197,
+    "Make": "Fiat",
+    "Model": "Panda",
+    "TravelledDistance": 21474837.0
+  },
+  {
+    "Id": 199,
+    "Make": "Fiat",
+    "Model": "Panda",
+    "TravelledDistance": 2147487.0
+  },
+  {
+    "Id": 224,
+    "Make": "Fiat",
+    "Model": "Panda",
+    "TravelledDistance": 21447.0
+  },
+  {
+    "Id": 195,
+    "Make": "Fiat",
+    "Model": "Panda 4x4",
+    "TravelledDistance": 9.22337368547758E+16
+  },
+  {
+    "Id": 187,
+    "Make": "Fiat",
+    "Model": "Panda 4x4",
+    "TravelledDistance": 922036854775807.0
+  },
+  {
+    "Id": 267,
+    "Make": "Fiat",
+    "Model": "Panda 4x4",
+    "TravelledDistance": 2147447.0
+  },
+  {
+    "Id": 194,
+    "Make": "Fiat",
+    "Model": "Panda 4x4 Antarctica",
+    "TravelledDistance": 21483647.0
+  },
+  {
+    "Id": 225,
+    "Make": "Fiat",
+    "Model": "Panda 4x4 Antarctica",
+    "TravelledDistance": 2183647.0
+  },
+  {
+    "Id": 249,
+    "Make": "Fiat",
+    "Model": "Panda 4x4 Antarctica",
+    "TravelledDistance": 214747.0
+  },
+  {
+    "Id": 72,
+    "Make": "Rolls-Royce",
+    "Model": "Phantom",
+    "TravelledDistance": 922337254775807.0
+  },
+  {
+    "Id": 77,
+    "Make": "Rolls-Royce",
+    "Model": "Phantom",
+    "TravelledDistance": 2147483647.0
+  },
+  {
+    "Id": 75,
+    "Make": "Rolls-Royce",
+    "Model": "Phantom",
+    "TravelledDistance": 214647.0
+  },
+  {
+    "Id": 69,
+    "Make": "Rolls-Royce",
+    "Model": "Phantom Drophead Coupé",
+    "TravelledDistance": 922336854775807.0
+  },
+  {
+    "Id": 45,
+    "Make": "Rolls-Royce",
+    "Model": "Phantom Drophead Coupé",
+    "TravelledDistance": 9223372075807.0
+  },
+  {
+    "Id": 76,
+    "Make": "Rolls-Royce",
+    "Model": "Phantom Drophead Coupé",
+    "TravelledDistance": 92233775807.0
+  },
+  {
+    "Id": 207,
+    "Make": "Ford",
+    "Model": "Pinto",
+    "TravelledDistance": 9854775807.0
+  },
+  {
+    "Id": 204,
+    "Make": "Ford",
+    "Model": "Pinto",
+    "TravelledDistance": 922337807.0
+  },
+  {
+    "Id": 313,
+    "Make": "Ford",
+    "Model": "Pinto",
+    "TravelledDistance": 922337203.0
+  },
+  {
+    "Id": 333,
+    "Make": "Ford",
+    "Model": "Pinto",
+    "TravelledDistance": 9223807.0
+  },
+  {
+    "Id": 323,
+    "Make": "Ford",
+    "Model": "Pinto",
+    "TravelledDistance": 2147647.0
+  },
+  {
+    "Id": 328,
+    "Make": "Ford",
+    "Model": "Pinto",
+    "TravelledDistance": 214647.0
+  },
+  {
+    "Id": 340,
+    "Make": "Toyota",
+    "Model": "Prius",
+    "TravelledDistance": 9223354775807.0
+  },
+  {
+    "Id": 335,
+    "Make": "Toyota",
+    "Model": "Prius",
+    "TravelledDistance": 922337203685.0
+  },
+  {
+    "Id": 342,
+    "Make": "Toyota",
+    "Model": "Prius",
+    "TravelledDistance": 92233775807.0
+  },
+  {
+    "Id": 338,
+    "Make": "Toyota",
+    "Model": "Prius",
+    "TravelledDistance": 92233775807.0
+  },
+  {
+    "Id": 321,
+    "Make": "Toyota",
+    "Model": "Prius",
+    "TravelledDistance": 9223372037.0
+  },
+  {
+    "Id": 314,
+    "Make": "Toyota",
+    "Model": "Prius",
+    "TravelledDistance": 922337807.0
+  },
+  {
+    "Id": 317,
+    "Make": "Toyota",
+    "Model": "Prius",
+    "TravelledDistance": 922337207.0
+  },
+  {
+    "Id": 288,
+    "Make": "Toyota",
+    "Model": "Prius",
+    "TravelledDistance": 922335807.0
+  },
+  {
+    "Id": 352,
+    "Make": "Toyota",
+    "Model": "Prius",
+    "TravelledDistance": 925807.0
+  },
+  {
+    "Id": 345,
+    "Make": "Toyota",
+    "Model": "Prius",
+    "TravelledDistance": 283647.0
+  },
+  {
+    "Id": 319,
+    "Make": "Toyota",
+    "Model": "Prius",
+    "TravelledDistance": 214747.0
+  },
+  {
+    "Id": 349,
+    "Make": "Toyota",
+    "Model": "Prius",
+    "TravelledDistance": 21477.0
+  },
+  {
+    "Id": 356,
+    "Make": "Toyota",
+    "Model": "Prius",
+    "TravelledDistance": 21477.0
+  },
+  {
+    "Id": 322,
+    "Make": "Ford",
+    "Model": "Ranger",
+    "TravelledDistance": 92233775807.0
+  },
+  {
+    "Id": 325,
+    "Make": "Ford",
+    "Model": "Ranger",
+    "TravelledDistance": 9223372007.0
+  },
+  {
+    "Id": 131,
+    "Make": "Skoda",
+    "Model": "Rapid",
+    "TravelledDistance": 9223372775807.0
+  },
+  {
+    "Id": 128,
+    "Make": "Skoda",
+    "Model": "Rapid",
+    "TravelledDistance": 2147447.0
+  },
+  {
+    "Id": 93,
+    "Make": "Skoda",
+    "Model": "Rapid Spaceback",
+    "TravelledDistance": 685477580.0
+  },
+  {
+    "Id": 127,
+    "Make": "Skoda",
+    "Model": "Rapid Spaceback",
+    "TravelledDistance": 474.0
+  },
+  {
+    "Id": 310,
+    "Make": "Nissan",
+    "Model": "Rogue",
+    "TravelledDistance": 9223807.0
+  },
+  {
+    "Id": 306,
+    "Make": "Nissan",
+    "Model": "Rogue",
+    "TravelledDistance": 214647.0
+  },
+  {
+    "Id": 117,
+    "Make": "Dacia",
+    "Model": "Sandero",
+    "TravelledDistance": 922337254775807.0
+  },
+  {
+    "Id": 123,
+    "Make": "Dacia",
+    "Model": "Sandero",
+    "TravelledDistance": 2147647.0
+  },
+  {
+    "Id": 121,
+    "Make": "Dacia",
+    "Model": "Sandero",
+    "TravelledDistance": 2143647.0
+  },
+  {
+    "Id": 124,
+    "Make": "Dacia",
+    "Model": "Sandero Stepway",
+    "TravelledDistance": 92233724775807.0
+  },
+  {
+    "Id": 113,
+    "Make": "Dacia",
+    "Model": "Sandero Stepway",
+    "TravelledDistance": 922337807.0
+  },
+  {
+    "Id": 296,
+    "Make": "Great Wall",
+    "Model": "Steed 3",
+    "TravelledDistance": 922336854775807.0
+  },
+  {
+    "Id": 320,
+    "Make": "Toyota",
+    "Model": "Tacoma",
+    "TravelledDistance": 96854775807.0
+  },
+  {
+    "Id": 351,
+    "Make": "Toyota",
+    "Model": "Tacoma",
+    "TravelledDistance": 922337807.0
+  },
+  {
+    "Id": 318,
+    "Make": "Toyota",
+    "Model": "Tacoma",
+    "TravelledDistance": 94775807.0
+  },
+  {
+    "Id": 287,
+    "Make": "Toyota",
+    "Model": "Tacoma",
+    "TravelledDistance": 21474647.0
+  },
+  {
+    "Id": 354,
+    "Make": "Toyota",
+    "Model": "Tacoma",
+    "TravelledDistance": 9225807.0
+  },
+  {
+    "Id": 315,
+    "Make": "Toyota",
+    "Model": "Tacoma",
+    "TravelledDistance": 2147.0
+  },
+  {
+    "Id": 344,
+    "Make": "Toyota",
+    "Model": "Tacoma",
+    "TravelledDistance": 927.0
+  },
+  {
+    "Id": 341,
+    "Make": "Toyota",
+    "Model": "Tacoma",
+    "TravelledDistance": 247.0
+  },
+  {
+    "Id": 327,
+    "Make": "Ford",
+    "Model": "Taurus",
+    "TravelledDistance": 9223375807.0
+  },
+  {
+    "Id": 203,
+    "Make": "Ford",
+    "Model": "Taurus",
+    "TravelledDistance": 21473647.0
+  },
+  {
+    "Id": 134,
+    "Make": "Seat",
+    "Model": "Toledo",
+    "TravelledDistance": 21483647.0
+  },
+  {
+    "Id": 103,
+    "Make": "Seat",
+    "Model": "Toledo",
+    "TravelledDistance": 21473647.0
+  },
+  {
+    "Id": 104,
+    "Make": "Seat",
+    "Model": "Toledo",
+    "TravelledDistance": 2147647.0
+  },
+  {
+    "Id": 98,
+    "Make": "Seat",
+    "Model": "Toledo",
+    "TravelledDistance": 2147647.0
+  },
+  {
+    "Id": 96,
+    "Make": "Seat",
+    "Model": "Toledo",
+    "TravelledDistance": 2147447.0
+  },
+  {
+    "Id": 109,
+    "Make": "Seat",
+    "Model": "Toledo",
+    "TravelledDistance": 21447.0
+  },
+  {
+    "Id": 269,
+    "Make": "Ford",
+    "Model": "Torino",
+    "TravelledDistance": 922337807.0
+  },
+  {
+    "Id": 334,
+    "Make": "Ford",
+    "Model": "Torino",
+    "TravelledDistance": 21474647.0
+  },
+  {
+    "Id": 206,
+    "Make": "Ford",
+    "Model": "Torino",
+    "TravelledDistance": 2147.0
+  },
+  {
+    "Id": 330,
+    "Make": "Ford",
+    "Model": "Torino",
+    "TravelledDistance": 217.0
+  },
+  {
+    "Id": 239,
+    "Make": "Opel",
+    "Model": "Vectra",
+    "TravelledDistance": 9223372854775808.0
+  },
+  {
+    "Id": 233,
+    "Make": "Opel",
+    "Model": "Vectra",
+    "TravelledDistance": 2147483647.0
+  },
+  {
+    "Id": 290,
+    "Make": "Nissan",
+    "Model": "Versa",
+    "TravelledDistance": 9223775807.0
+  },
+  {
+    "Id": 301,
+    "Make": "Nissan",
+    "Model": "Versa",
+    "TravelledDistance": 922775807.0
+  },
+  {
+    "Id": 303,
+    "Make": "Nissan",
+    "Model": "Versa",
+    "TravelledDistance": 2143647.0
+  },
+  {
+    "Id": 219,
+    "Make": "Mercedes",
+    "Model": "W124",
+    "TravelledDistance": 922336854775807.0
+  },
+  {
+    "Id": 210,
+    "Make": "Mercedes",
+    "Model": "W124",
+    "TravelledDistance": 2147647.0
+  },
+  {
+    "Id": 201,
+    "Make": "Mercedes",
+    "Model": "W202",
+    "TravelledDistance": 92233754775807.0
+  },
+  {
+    "Id": 217,
+    "Make": "Mercedes",
+    "Model": "W202",
+    "TravelledDistance": 2147647.0
+  },
+  {
+    "Id": 214,
+    "Make": "Mercedes",
+    "Model": "W203",
+    "TravelledDistance": 5807.0
+  },
+  {
+    "Id": 211,
+    "Make": "Mercedes",
+    "Model": "W204",
+    "TravelledDistance": 9285807.0
+  },
+  {
+    "Id": 218,
+    "Make": "Mercedes",
+    "Model": "W210",
+    "TravelledDistance": 9.2233720368547758E+18
+  },
+  {
+    "Id": 212,
+    "Make": "Mercedes",
+    "Model": "W210",
+    "TravelledDistance": 2147483647.0
+  },
+  {
+    "Id": 216,
+    "Make": "Mercedes",
+    "Model": "W211",
+    "TravelledDistance": 922775807.0
+  },
+  {
+    "Id": 213,
+    "Make": "Mercedes",
+    "Model": "W211",
+    "TravelledDistance": 92775807.0
+  },
+  {
+    "Id": 202,
+    "Make": "Mercedes",
+    "Model": "W211",
+    "TravelledDistance": 47757.0
+  },
+  {
+    "Id": 220,
+    "Make": "Mercedes",
+    "Model": "W212",
+    "TravelledDistance": 927254775807.0
+  },
+  {
+    "Id": 200,
+    "Make": "Mercedes",
+    "Model": "W212",
+    "TravelledDistance": 54775807.0
+  },
+  {
+    "Id": 215,
+    "Make": "Mercedes",
+    "Model": "W212",
+    "TravelledDistance": 2183647.0
+  },
+  {
+    "Id": 182,
+    "Make": "Mercedes",
+    "Model": "W212",
+    "TravelledDistance": 2147647.0
+  },
+  {
+    "Id": 209,
+    "Make": "Mercedes",
+    "Model": "W212",
+    "TravelledDistance": 927.0
+  },
+  {
+    "Id": 295,
+    "Make": "Great Wall",
+    "Model": "Wingle 5",
+    "TravelledDistance": 214747.0
+  },
+  {
+    "Id": 70,
+    "Make": "Rolls-Royce",
+    "Model": "Wraith",
+    "TravelledDistance": 2147483647.0
+  },
+  {
+    "Id": 68,
+    "Make": "Rolls-Royce",
+    "Model": "Wraith",
+    "TravelledDistance": 21647.0
+  },
+  {
+    "Id": 256,
+    "Make": "BMW",
+    "Model": "X6 M",
+    "TravelledDistance": 2036854775807.0
+  },
+  {
+    "Id": 263,
+    "Make": "BMW",
+    "Model": "X6 M",
+    "TravelledDistance": 922775807.0
+  },
+  {
+    "Id": 254,
+    "Make": "BMW",
+    "Model": "X6 M",
+    "TravelledDistance": 483647.0
+  },
+  {
+    "Id": 347,
+    "Make": "Toyota",
+    "Model": "Yaris",
+    "TravelledDistance": 94775807.0
+  },
+  {
+    "Id": 339,
+    "Make": "Toyota",
+    "Model": "Yaris",
+    "TravelledDistance": 21477.0
+  },
+  {
+    "Id": 324,
+    "Make": "Toyota",
+    "Model": "Yaris",
+    "TravelledDistance": 21477.0
+  },
+  {
+    "Id": 343,
+    "Make": "Toyota",
+    "Model": "Yaris",
+    "TravelledDistance": 9207.0
+  }
+]
