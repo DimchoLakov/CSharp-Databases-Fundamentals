@@ -1,2 +1,7 @@
-# CSharp-Databases-Fundamentals
-C# Databases Fundamentals (Basics and Advanced) May 2018
+# MSSQL & EF Core
+
+MSSQL
+Databases are the standard way to use dynamic information in modern technologies, making them an integral part of almost every application. The Intensive Basics Course will introduce you to one of the most widely used database management systems (DBMS) used in the development of modern information systems - Microsoft SQL Server. The course focuses on relational modeling, data modeling with ER diagrams (tables and relations between them) and SQL language (data retrieval, selection, projection, joining, aggregation, grouping, modification, deletion and insertion). Fundamental knowledge about ACID transactions and transaction processing and practical tips for adjusting productivity are provided. This course sets the basics of working with databases, making it easier to use in real-world applications, and understanding concepts such as database transformation into object-oriented (ORM) modeling.
+
+EF Core
+The course tracks in detail the ORM technology: Entity Framework Core (EF core), which is an ORM standard in C # and .NET Core applications. EF Core allows mapping between a relational database and an object-oriented model using both the "database first" and "code first" approaches and provides a powerful object-oriented API for querying the database and performing CRUD operations. We will demonstrate established practices in building a database layer on sophisticated systems using the "Repository" and "Unit of Work" templates.
